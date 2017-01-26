@@ -84,7 +84,10 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom-width: 0px;
+	border-top: 0;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -4212,10 +4215,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 0px;
+	border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4331,7 +4334,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-decoration: none;
 }
 .navbar-brand > img {
-  display: block;
+	margin-top: -87px;
+	/* [disabled]margin-right: 49px; */
+	margin-left: 87px;
+	margin-bottom: -73px;
+	display: inline;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
