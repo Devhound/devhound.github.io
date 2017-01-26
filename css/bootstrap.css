@@ -1097,8 +1097,8 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
-  text-decoration: none;
+	color: #CC0000;
+	text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -4541,8 +4541,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+	background-color: #CC0000;
+	border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -6365,32 +6365,25 @@ button.close {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: 80px;
 	width: 15%;
 	font-size: 20px;
-	color: #fff;
+	color: #cc0000;
 	text-align: center;
 	/* [disabled]text-shadow: 0 1px 2px rgba(0, 0, 0, .6); */
 	filter: alpha(opacity=50);
 	opacity: .5;
+	right: 0px;
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
 }
 .carousel-control.right {
-  right: 0;
-  left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+	right: 87px;
+	left: auto;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+	background-repeat: repeat-x;
 }
 .carousel-control:hover,
 .carousel-control:focus {

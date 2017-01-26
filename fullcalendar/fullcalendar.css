@@ -817,11 +817,15 @@ a.fc-more:hover {
 }
 
 .fc-toolbar .fc-left {
-	float: left;
+	float: right;
 }
 
 .fc-toolbar .fc-right {
 	float: right;
+}
+
+.fc-right {
+	display: none;
 }
 
 .fc-toolbar .fc-center {
