@@ -4576,14 +4576,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+	border-color: #FFFFFF;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+	background-color: #CC0000;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+	background-color: #FFFFFF;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
