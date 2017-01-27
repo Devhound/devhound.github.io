@@ -3611,14 +3611,14 @@ tbody.collapse.in {
 	clear: both;
 	font-weight: normal;
 	line-height: 1.42857143;
-	color: #CC0000;
+	color: #666666;
 	white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
-  text-decoration: none;
-  background-color: #f5f5f5;
+	color: #CC0000;
+	text-decoration: none;
+	background-color: #FFFFFF;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -4038,8 +4038,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eee;
+	text-decoration: none;
+	/* [disabled]background-color: #eee; */
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4219,6 +4219,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 	min-height: 50px;
 	margin-bottom: 0px;
 	border: 1px solid transparent;
+	max-width: none;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4228,6 +4229,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    min-height: 100px;
   }
 }
 .navbar-collapse {
@@ -4588,10 +4594,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background-color: #CC0000;
+	background-color: #FFFFFF;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #FFFFFF;
+	background-color: #CC0000;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -4600,8 +4606,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+	color: #CC0000;
+	background-color: #FFFFFF;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -6290,7 +6296,8 @@ button.close {
   border-left-color: #fff;
 }
 .carousel {
-  position: relative;
+	position: relative;
+	width: 100%;
 }
 .carousel-inner {
   position: relative;
@@ -6714,6 +6721,21 @@ button.close {
   th.visible-lg,
   td.visible-lg {
     display: table-cell !important;
+  }
+.navbar-brand > img {
+	margin-top: -50px;
+	margin-right: -1px;
+	margin-left: 0px;
+	margin-bottom: -71px;
+	display: inline;
+	width: 300px;
+}
+.navbar-right {
+	float: right !important;
+	margin-right: -15px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 16px;
   }
 }
 @media (min-width: 1200px) {
