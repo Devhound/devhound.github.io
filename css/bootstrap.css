@@ -19,20 +19,30 @@
 	text-transform: uppercase;
 	margin: 0;
 	position: absolute;
-	top: 50%;
+	top: 43%;
 	left: 0%;
 	right: 0%;
 	font-size: 2rem;
-	bottom: 0%;
+	bottom: 50%;
 }
-
+@media (max-width: 768px) {
+  .mid h2 {
+    font-size: 1rem;
+	font-weight: 700;
+  }
+}
 .margino {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	
 	
 }
-
+@media (max-width: 768px) {
+  .margino {
+    margin-bottom: 10px;
+	margin-top: 0;
+  }
+}
 /*CUSTOM CSS */
 
 html {
