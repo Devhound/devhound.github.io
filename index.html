@@ -17,30 +17,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Start of Async Drift Code -->
-<script>
-!function() {
-  var t;
-  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-  t.factory = function(e) {
-    return function() {
-      var n;
-      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-    };
-  }, t.methods.forEach(function(e) {
-    t[e] = t.factory(e);
-  }), t.load = function(t) {
-    var e, n, o, i;
-    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-  });
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('gbraymt5e7kk');
-</script>
-<!-- End of Async Drift Code -->
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -255,63 +231,93 @@ body {
   
   </div>
   <hr>
-  
   <div class="container">
   <div class="row">
-    
-    <div class="col-sm-3 text-center"> <img src="images/intramurals-tile.png" class="img-responsive center-block" alt="Placeholder image">
+  <h1>Isotope - filtering</h1>
+
+<div class="button-group filters-button-group center-block">
+  <button class="button is-checked" data-filter="*">show all</button>
+  <button class="button" data-filter=".intramurals">Intramurals</button>
+  <button class="button" data-filter=".groupfit">Group Fitness</button>
+  <button class="button" data-filter=".opc">Outdoor Pursuits</button>
+  <button class="button" data-filter=".special">Special Events</button>
+  <button class="button" data-filter=".aquatics">Aquatics</button>
+</div>
+</div>
+<div class="grid">
+  <div class="element-item intramurals " data-category="intramurals">
+    <img src="images/intramurals-tile.png" alt="Placeholder image" width="300px" height="300px">
       <h5><a href="http://www.google.com">Register for Intramural Sports</a></h5>
-    </div>
-  <div class="col-sm-3 text-center"> <img src="images/Indoors-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Group Fitness Schedules</a></h5>
-    </div>
-  <div class="col-sm-3 text-center"> <img src="images/outdoors-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">OPC Trip Schedules</a></h5>
-    </div>
-    <div class="col-sm-3 text-center"> <img src="images/sportclubs-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Sport Clubs</a></h5>
-    </div>
- </div>
- </div>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm-3 text-center"> <img src="images/aquatics-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Aquatics</a></h5>
-    </div>
-  <div class="col-sm-3 text-center"> <img src="images/membership-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Membership</a></h5>
-    </div>
-  <div class="col-sm-3 text-center"> <img src="images/specialevents-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Special Events</a></h5>
-    </div>
-    <div class="col-sm-3 text-center"> <img src="images/turffields-tile.png" class="img-responsive center-block" alt="Placeholder image">
-      <h5><a href="http://www.google.com">Turf Fields</a></h5>
-    </div>
-    <div class="text-center col-md-12 hidden-lg">
-      <div class="well hidden-lg hidden-xs"><strong> Easily build your page using the Bootstrap components from the Insert panel.</strong></div>
-    </div>
-    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-4 text-center hidden-lg hidden-xs">
-      <h4>Adding <strong>Buttons</strong></h4>
-      <p>Quickly add buttons to your page by using the button component in the insert panel. </p>
-      <button type="button" class="btn btn-info btn-sm">Info Button</button>
-      <button type="button" class="btn btn-success btn-sm">Success Button</button>
-    </div>
-    <div class="text-center col-sm-4 hidden-lg hidden-xs">
-      <h4>Adding <strong>Labels</strong></h4>
-      <p>Using the insert panel, add labels to your page by using the label component.</p>
-      <span class="label label-warning">Info Label</span><span class="label label-danger">Danger Label</span> </div>
-    <div class="text-center col-sm-4 hidden-lg hidden-xs">
-      <h4>Adding <strong>Glyphicons</strong></h4>
-      <p>You can also add glyphicons to your page from within the insert panel.</p>
-      <div class="row">
-        <div class="col-xs-4"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
-        <div class="col-xs-4"><span class="glyphicon glyphicon-home" aria-hidden="true"> </span> </div>
-        <div class="col-xs-4"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-      </div>
-    </div>
+  <div class="element-item groupfit " data-category="groupfit">
+    <img src="images/Indoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Group Fitness Schedules</a></h5>
+  </div>
+  <div class="element-item opc " data-category="opc">
+    <img src="images/outdoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">OPC Trip Schedules</a></h5>
+  </div>
+  <div class="element-item special " data-category="special">
+    <img src="images/specialevents-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Special Events</a></h5>
+  </div>
+  <div class="element-item aquatics " data-category="aquatics">
+     <img src="images/aquatics-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Aquatics</a></h5>
+  </div>
+  <div class="element-item intramurals " data-category="intramurals">
+    <img src="images/intramurals-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Register for Intramural Sports</a></h5>
+  </div>
+  <div class="element-item groupfit " data-category="groupfit">
+    <img src="images/Indoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Group Fitness Schedules</a></h5>
+  </div>
+  <div class="element-item opc " data-category="opc">
+    <img src="images/outdoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">OPC Trip Schedules</a></h5>
+  </div>
+  <div class="element-item special" data-category="special">
+    <img src="images/specialevents-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Special Events</a></h5>
+  </div>
+  <div class="element-item aquatics" data-category="aquatics">
+    <img src="images/aquatics-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Aquatics</a></h5>
+  </div>
+  <div class="element-item intramurals " data-category="intramurals">
+    <img src="images/intramurals-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Register for Intramural Sports</a></h5>
+  </div>
+  <div class="element-item groupfit" data-category="groupfit">
+    <img src="images/Indoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Group Fitness Schedules</a></h5>
+  </div>
+  <div class="element-item opc" data-category="opc">
+    <img src="images/outdoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">OPC Trip Schedules</a></h5>
+  </div>
+  <div class="element-item special" data-category="special">
+    <img src="images/specialevents-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Special Events</a></h5>
+  </div>
+  <div class="element-item aquatics" data-category="aquatics">
+    <img src="images/aquatics-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Aquatics</a></h5>
+  </div>
+  <div class="element-item intramurals" data-category="intramurals">
+    <img src="images/intramurals-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Register for Intramural Sports</a></h5>
+  </div>
+  <div class="element-item groupfit" data-category="groupfit">
+    <img src="images/Indoors-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Group Fitness Schedules</a></h5>
+  </div>
+  <div class="element-item turf" data-category="turf">
+    <img src="images/turffields-tile.png" alt="Placeholder image" width="300px" height="300px">
+      <h5><a href="http://www.google.com">Turf Fields</a></h5>
+  </div>
+</div>
   </div>
   <hr>
   <div class="row">
@@ -331,6 +337,42 @@ body {
 <script src="fullcalendar/fullcalendar.min.js"></script>
 <script type="text/javascript" src="fullcalendar/gcal.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/fit-columns.js"></script>
+<script type="text/javascript">
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows'
+});
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
+// bind filter button click
+$('.filters-button-group').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+</script>
 <script type="text/javascript">
     $(document).ready(function(){
       $('.slidr').slick({
