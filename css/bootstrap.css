@@ -54,8 +54,8 @@ button:focus {
 }
 
 .button:active {
-	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 	-webkit-box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+	box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 /* ---- button-group ---- */
@@ -67,7 +67,7 @@ button:focus {
 }
 
 .button-group .button {
-  border-radius: 5px;
+  border-radius: 4px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -76,7 +76,6 @@ button:focus {
 	position: relative;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -89,7 +88,7 @@ button:focus {
 }
 
 .grid {
-  border: 1px solid #333;
+  border: 0px solid #333;
 }
 
 /* clear fix */
@@ -6421,6 +6420,14 @@ button.close {
 	position: relative;
 	width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+	.carousel-inner > .item > a > img {
+	height: 300px;
+	}
+	
+}
+
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -6603,6 +6610,24 @@ button.close {
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+@media screen and (min-width: 1200px) {
+	.carousel-caption {
+		font-size: 100px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    text-transform: uppercase;
+		
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.carousel-caption {
+		font-size: 10px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    text-transform: uppercase;
+		
+	}
 }
 .carousel-caption .btn {
   text-shadow: none;
