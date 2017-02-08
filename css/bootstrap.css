@@ -79,8 +79,8 @@ button:focus {
 	width: 350px;
 	height: 300px;
 	margin-bottom: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 5px;
+	margin-right: 5px;
 	text-align: center;
 	display: block;
 }
