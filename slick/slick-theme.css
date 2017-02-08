@@ -25,9 +25,9 @@
 	}
 	
 .slick-active:hover {
-    color: #fff;
+    color: #CC0000;
     outline: none;
-    background: #CC0000;
+    background: #fff;
 }	
 	
 /* Arrows */

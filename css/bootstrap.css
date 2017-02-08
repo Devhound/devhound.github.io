@@ -11,6 +11,19 @@
 
 
 /*CUSTOM CSS */
+
+.page-section.dark {
+	color: #fff;
+    background-color: #cc0000;
+    border: 1px solid #18191b;
+    border-width: 1px 0;	
+}
+
+.page-section.xl {
+	    padding: 8rem 0;
+	
+}
+
 .centered {
 position:relative;
 top:50%;
