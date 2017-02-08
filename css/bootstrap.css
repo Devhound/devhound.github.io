@@ -88,7 +88,7 @@ button:focus {
 	position: relative;
 	margin-top: 5px;
 	float: left;
-	width: 325px;
+	width: 350px;
 	height: 300px;
 	margin-bottom: 5px;
 	margin-left: 5px;
@@ -97,6 +97,11 @@ button:focus {
 	display: block;
 }
 
+@media (max-width: 768px) {
+  .element-item {
+    width: 325px;
+  }
+}
 .element-item > * {
   margin: 0;
   padding: 0;
