@@ -97,21 +97,31 @@ button:focus {
   margin-bottom: 20px;
 }
 
+.gridcontainer {
+    position: relative;
+    max-width: 1170px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
 .element-item {
 	position: relative;
-	margin-top: 5px;
-	width: auto;
-	height: auto;
-	margin-bottom: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: center;
-	display: block;
+	width: 32%;
+	margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+.element-item {
+    width: 100%;
+    margin-bottom: 2%;
+}
+}
+.gutter-sizer {
+    width: 2%;
 }
 
-
 .grid {
-  border: 1px solid #333;
+  border: 0px solid #333;
 	width: 100%;
 	align-items: center;
 }
