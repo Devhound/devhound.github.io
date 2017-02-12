@@ -109,10 +109,6 @@ button:focus {
 	display: block;
 }
 
-.element-item > * {
-  margin: 0;
-  padding: 0;
-}
 
 .grid {
   border: 1px solid #333;
