@@ -12,6 +12,8 @@
 
 /*CUSTOM CSS */
 
+
+
 .page-section.dark {
 	color: #fff;
     background-color: #cc0000;
@@ -135,16 +137,6 @@ button:focus {
 
 * { box-sizing: border-box; }
 
-.mid h2 {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900;
-	color: white;
-	text-transform: uppercase;
-	position: absolute;
-	top: 30%;
-	font-size: 2rem;
-	bottom: 50%;
-}
 
 .margino {
 	margin-bottom: 10px;
