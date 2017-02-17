@@ -23,7 +23,7 @@
 </head>
 <body>
 <nav class="navbar navbar-default pmd-navbar pmd-z-depth">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle pmd-navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -351,6 +351,19 @@
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/propeller.js"></script>
+<script> 
+
+
+	$(document).ready(function() {
+		$('.pmd-dropdown-hover').dropdownHover().dropdown();
+		$('.guideline .pmd-sidebar').on('show.bs.dropdown', function () {
+			$('.guideline .pmd-sidebar .pmd-sidebar-nav li a').removeClass('active')
+		})
+	});
+
+</script>
+
+
 <script>
 
 $(document).ready(function(){	
