@@ -12,6 +12,48 @@
 
 /*CUSTOM CSS */
 
+.section-title-black {
+    text-align: center;
+    font-family: Charter, sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #000;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.section-title-black:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10%;
+    max-width: 6rem;
+    height: 0.2rem;
+    background-color: #cc0000;
+    margin: 1rem auto 2rem;
+}
+
+.section-title-white {
+    text-align: center;
+    font-family: Charter, sans-serif;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.section-title-white:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10%;
+    max-width: 6rem;
+    height: 0.2rem;
+    background-color: #000;
+    margin: 1rem auto 2rem;
+}
+
 .hover-cover {
 	color: #fff;
     position: relative;
@@ -62,7 +104,7 @@
 }
 
 .page-section.xl {
-	    padding: 8rem 0;
+	    padding: 2rem 0;
 
 }
 
@@ -4573,7 +4615,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+	margin-top: 13.5px;
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-bottom: 7.5px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4760,12 +4805,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-text {
   color: #777;
 }
+
+@media (min-width: 767px) {
 .navbar-default .navbar-nav > li > a {
-	color: #000000;
+	  color: #000000 !important;
+	
+ }
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff; 
 }
 
 @media (max-width: 767px) {
-
 	.navbar-default .navbar-nav > li > a:hover,
 	.navbar-default .navbar-nav > li > a:focus {
 		color: #fff;

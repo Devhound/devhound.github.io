@@ -100,7 +100,7 @@
 
 /* ==========  Typography  ========== */
 html { font-size: 16px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
-body { font-family: 'Roboto'; font-size: 0.875rem; line-height: 1.6; color: #333; background-color: #ededed;}
+body { font-family: 'Roboto'; font-size: 0.875rem; line-height: 1.6; color: #333; background-color: #ffffff;}
 a{ color: #337ab7; text-decoration: none; outline:none;}
 a:focus, a:hover { outline: none; outline: none; outline-offset:-2px; text-decoration:none;}
 
@@ -768,6 +768,15 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 @media (min-width: 768px) {
 .pmd-navbar.navbar > .container .navbar-brand, .pmd-navbar.navbar > .container-fluid .navbar-brand { margin-left:0px;}
 }
+
+@media (max-width: 768px) {
+ .pmd-navbar .navbar-nav > li > a {
+	line-height: 24px;
+    font-size: 1.5rem;
+ }
+	
+}
+
 .pmd-navbar .navbar-nav > li > a { line-height: 24px;}
 @media (min-width: 768px) {
 .pmd-navbar .navbar-nav > li > a { padding-top:20px; padding-bottom:20px;}
@@ -792,7 +801,7 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 @media (max-width: 767px) {
 .pmd-navbar .navbar-header{padding:0 8px;}
 .pmd-navbar.navbar-fixed-top, .pmd-navbar.navbar-fixed-bottom{z-index: 998;}
-.pmd-navbar-sidebar{position: relative; display: block; min-height: 100%; overflow-y: auto; overflow-x: hidden; border: none; -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);-o-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); background:#cc0000;}
+.pmd-navbar-sidebar{position: relative; display: block; min-height: 100%; overflow-y: auto; overflow-x: hidden; border: none; -webkit-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);-o-transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1); background:#000000;}
 .pmd-navbar-sidebar:before, .pmd-navbar-sidebar:after { content: " "; display: table;}
 .pmd-navbar-sidebar:after { clear: both;}
 .pmd-navbar-sidebar::-webkit-scrollbar-track { border-radius: 2px;}
