@@ -10,7 +10,7 @@ var $grid = $('.grid').isotope({
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
 });
-});
+
 // filter functions
 var filterFns = {
   // show if number is greater than 50
@@ -38,4 +38,5 @@ $('.button-group').each( function( i, buttonGroup ) {
     $buttonGroup.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
   });
+});
 });
