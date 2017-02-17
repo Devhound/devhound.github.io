@@ -8,9 +8,9 @@
 
 
 
-
-
 /*CUSTOM CSS */
+
+
 
 .section-title-black {
     text-align: center;
@@ -4577,7 +4577,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 	margin-right: -1px;
 	margin-left: 0px;
 	margin-bottom: -71px;
-	display: inline;
+	display: none;
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
