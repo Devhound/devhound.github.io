@@ -123,7 +123,7 @@
   </div>
   <!-- /.container-fluid -->
 </nav>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div>
       <div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -134,27 +134,27 @@
           <li data-target="#carousel1" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/raiderx2a.jpg" alt="First slide image" width="100%" class="center-block">
+          <div class="item active"><img src="images/test-image.png" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
-              <h4>Raider X and Raider X2 Classes are Back!</h4>
+              <h4></h4>
 
             </div>
           </div>
-          <div class="item"><img src="images/ski_shop_16.jpg" alt="Second slide image" width="100%" class="center-block">
+          <div class="item"><img src="images/test-image.png" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
-              <h4>Reserve Your Ski and Snowboard Packages Today!</h4>
+              <h4></h4>
 
             </div>
           </div>
-          <div class="item"><img src="images/basketball.gif" alt="Third slide image" width="100%" class="center-block">
+          <div class="item"><img src="images/test-image.png" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
-              <h4>Get Ready for Intramural Basketball!</h4>
+              <h4></h4>
 
             </div>
             </div>
-            <div class="item"><img src="images/adult-swim.gif" alt="Fourth slide image" width="100%" class="center-block">
+            <div class="item"><img src="images/test-image.png" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
-              <h4>We Have Adult Swim Lessons! </h4>
+              <h4></h4>
 
               </div>
             </div>
@@ -178,13 +178,13 @@
     <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
       <h2></h2>
     </div>
-    
-    
+
+
     <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
       <h2></h2>
     </div>
-                
-                
+
+
     <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
       <h2></h2>
     </div>
@@ -193,7 +193,7 @@
     </div>
     </div>
     </div>
-    	
+
   <hr>
   <br />
   <div class="page-section xl dark">
@@ -337,44 +337,8 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="js/fit-columns.js"></script>
-<script type="text/javascript">
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  fitRows: {
-        gutter: '.gutter-sizer'
-      },
-      layoutMode: 'fitRows',
-      percentPosition: true
-});
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
-// bind filter button click
-$('.filters-button-group').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
-});
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
-</script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
       $('.slidr').slick({

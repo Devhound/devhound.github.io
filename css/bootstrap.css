@@ -174,13 +174,9 @@ button:focus {
 }
 
 /* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
-* { box-sizing: border-box; }
+
+ * { box-sizing: border-box; }
 
 
 .margino {
