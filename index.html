@@ -8,6 +8,7 @@
 
 <!-- Bootstrap -->
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/propeller.css" rel="stylesheet">
 <link href="fullcalendar/fullcalendar.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="slick/slick.css">
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -21,20 +22,20 @@
     <![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top pmd-navbar pmd-z-depth">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <button type="button" class="navbar-toggle pmd-navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       <a class="navbar-brand" href="#"><img src="images/new-rec-sports-logo.gif" alt="Brand" width="200"></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav navbar-right">
+    <div class="collapse navbar-collapse pmd-navbar-sidebar" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
 
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Intramurals<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Sport Registration Dates</a></li>
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Intramurals<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a aria-expanded="false" href="#">Sport Registration Dates</a></li>
             <li><a href="#">IM Leagues Registration</a></li>
             <li><a href="#">Free Agent Info</a></li>
             <li><a href="#">Become an Official</a></li>
@@ -43,8 +44,8 @@
             <li><a href="#">F.A.Q's</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Fitness/Wellness<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Fitness/Wellness<span class="caret"></span></a>
+          <ul class="dropdown-menu">
 
             <li><a href="#">About</a></li>
             <li><a href="#">Fitness Class Schedules</a></li>
@@ -61,8 +62,8 @@
 
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Outdoor Pursuits<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Outdoor Pursuits<span class="caret"></span></a>
+          <ul class="dropdown-menu">
             <li><a href="#">Leadership Development</a></li>
             <li><a href="#">Equipment Rentals</a></li>
             <li><a href="#">Vertical Plains 2017</a></li>
@@ -75,8 +76,8 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sport Clubs<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Sport Clubs<span class="caret"></span></a>
+          <ul class="dropdown-menu">
             <li><a href="#">Clubs</a></li>
             <li><a href="#">How to Start a Sport Club</a></li>
             <li><a href="#">Visiting Team Information</a></li>
@@ -87,8 +88,8 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Aquatics<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Aquatics<span class="caret"></span></a>
+          <ul class="dropdown-menu">
             <li><a href="#">Facilities</a></li>
             <li><a href="#">CPR Classes</a></li>
             <li><a href="#">Lifeguarding Certification</a></li>
@@ -101,8 +102,8 @@
           </ul>
         </li>
 
-        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Facilities<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Facilities<span class="caret"></span></a>
+          <ul class="dropdown-menu">
             <li><a href="#">Hours</a></li>
             <li><a href="#">Faculty Staff</a></li>
             <li><a href="#">Membership</a></li>
@@ -122,8 +123,9 @@
     <!-- /.navbar-collapse -->
   </div>
   <!-- /.container-fluid -->
+  <div class="pmd-sidebar-overlay"></div>
 </nav>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div>
       <div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -167,28 +169,28 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 col-sm-4 col-xs-6 hvr-shrink">
-     <a href="http://www.depts.ttu.edu/recsports/intramurals/team.php" class="hover-cover">
+    <div class="col-md-4 col-sm-4 col-xs-6 hvr-grow">
+     <a href="http://www.depts.ttu.edu/recsports/intramurals/team.php" class="hover-cover pmd-z-depth-4 pmd-ripple-effect">
     <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
-    <div class="cover-wrap"><div class="cover-table"><div class="cover-cell"><h3 class="cover-title">Intramurals</h3></div></div></div></a>
+    <div class="cover-wrap"><div class="cover-table"><div class="cover-cell"><h2 class="cover-title">Intramurals</h2></div></div></div></a>
 </div>
-    <div class="col-md-4 col-sm-4 col-xs-6 hvr-shrink"><img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
+    <div class="col-md-4 col-sm-4 col-xs-6 hvr-grow"><img src="images/intramurals-tile.png" class="img-responsive pmd-z-depth-4" alt="Placeholder image">
       <h2></h2>
     </div>
-    <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
-      <h2></h2>
-    </div>
-
-
-    <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
+    <div class="col-md-4 col-sm-4  col-xs-6 hvr-grow"> <img src="images/intramurals-tile.png" class="img-responsive pmd-z-depth-4" alt="Placeholder image">
       <h2></h2>
     </div>
 
 
-    <div class="col-md-4 col-sm-4  col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
+    <div class="col-md-4 col-sm-4  col-xs-6 hvr-grow"> <img src="images/intramurals-tile.png" class="img-responsive pmd-z-depth-4" alt="Placeholder image">
       <h2></h2>
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-6 hvr-shrink"> <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
+
+
+    <div class="col-md-4 col-sm-4  col-xs-6 hvr-grow"> <img src="images/intramurals-tile.png" class="img-responsive pmd-z-depth-4" alt="Placeholder image">
+      <h2></h2>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6 hvr-grow"> <img src="images/intramurals-tile.png" class="img-responsive pmd-z-depth-4" alt="Placeholder image">
       <h2></h2>
     </div>
     </div>
@@ -201,7 +203,7 @@
   <h1 class="text-center">Quick Links</h1>
   <br /><br />
   						<div class="slidr">
-    						<a href="http://www.depts.ttu.edu/recsports/intramurals/team.php" class="hover-cover"><div><i class="fa fa-clock-o  fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">Hours</h2></div></a>
+    						<a href="http://www.depts.ttu.edu/recsports/intramurals/team.php" class="hover-cover pmd-ripple-effect"><div><i class="fa fa-clock-o  fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">Hours</h2></div></a>
 							<div><i class="fa fa-newspaper-o fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">News</h2></div>
                             <div><i class="fa fa-calendar fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">Class Schedules</h2></div>
     						<div><i class="fa fa-users fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">Faculty/Staff</h2></div>
@@ -220,12 +222,12 @@
   <div class="row">
 
 <div class="filters-button-group button-group" align="center">
-  <button class="button is-checked" align="center" data-filter="*">show all</button>
-  <button class="button" align="center" data-filter=".groupfit">Group Fitness</button>
-  <button class="button" align="center" data-filter=".intramurals">Intramurals</button>
-  <button class="button" align="center" data-filter=".opc">Outdoor Pursuits</button>
-  <button class="button" align="center" data-filter=".special">Special Events</button>
-  <button class="button" align="center" data-filter=".aquatics">Aquatics</button>
+  <button class="button is-checked pmd-ripple-effect pmd-z-depth-1" align="center" data-filter="*">show all</button>
+  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".groupfit">Group Fitness</button>
+  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".intramurals">Intramurals</button>
+  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".opc">Outdoor Pursuits</button>
+  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".special">Special Events</button>
+  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".aquatics">Aquatics</button>
 </div>
 </div>
 <div class="grid">
@@ -330,15 +332,12 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
-<script src="fullcalendar/lib/moment.min.js"></script>
-<script src="fullcalendar/lib/jquery.min.js"></script>
-<script src="fullcalendar/fullcalendar.min.js"></script>
-<script type="text/javascript" src="fullcalendar/gcal.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="js/fit-columns.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/propeller.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
       $('.slidr').slick({
@@ -380,49 +379,5 @@
       });
     });
   </script>
-<script type="text/javascript">// <![CDATA[
-  $(document).ready(function() {
-
-      $('#calendar').fullCalendar({
-
-
-
-
-  header: {
-          left: 'prev,next,listDay,listWeek',
-          center: '',
-          right: 'title'
-        },
-
-
-        views: {
-          listDay: { buttonText: 'Today' },
-          listWeek: { buttonText: 'Week' }
-        },
-
-        defaultView: 'listDay',
-  			navLinks: true, // can click day/week names to navigate views
-  			editable: true,
-
-        height: 425,
-
-        googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
-
-        // US Holidays
-        events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
-
-        eventClick: function(event) {
-          window.open(event.url, 'gcalevent', 'width=400,height=600');
-          return false;
-        },
-
-        loading: function(bool) {
-          $('#loading').toggle(bool);
-        }
-
-      });
-
-    });
-  // ]]></script>
 </body>
 </html>

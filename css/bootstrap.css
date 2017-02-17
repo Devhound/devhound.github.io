@@ -54,11 +54,6 @@
 }
 
 
-@media (min-width: 1200px) {
-ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
-}
-
-
 .page-section.dark {
 	color: #fff;
     background-color: #cc0000;
@@ -1312,11 +1307,19 @@ img {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+{
+ display: block;
+ max-width: 1170px;
+ height: auto;
+}
+
 .img-responsive,
 .thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.thumbnail a > img
+ {
   display: block;
   max-width: 100%;
   height: auto;
@@ -4213,15 +4216,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  padding-left: 0;
+  padding-left: 25px;
   margin-bottom: 0;
   list-style: none;
 }
 .nav > li {
   position: relative;
   display: block;
-  text-align: center;
-  font-size: medium;
 }
 .nav > li > a {
   position: relative;
@@ -4292,7 +4293,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs.nav-justified > li > a {
   margin-bottom: 5px;
-  text-align: center;
 }
 .nav-tabs.nav-justified > .dropdown .dropdown-menu {
   top: auto;
@@ -4357,7 +4357,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-justified > li > a {
   margin-bottom: 5px;
-  text-align: center;
 }
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
@@ -4583,8 +4582,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 1200px) {
   .navbar-nav .open .dropdown-menu {
-    text-align: center;
-    position: static;
+    position: relative;;
     float: none;
     width: auto;
     margin-top: 0;
@@ -4607,8 +4605,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 1200px) {
   .navbar-nav {
-    float: left;
-    margin: 0;
+    float: none;
+    vertical-align: middle;
   }
   .navbar-nav > li {
     float: left;
@@ -6495,10 +6493,11 @@ button.close {
 
 @media screen and (max-width: 768px) {
 	.carousel-inner > .item > a > img {
-	height: 300px;
+	height: auto;
+	width: 100%;
 	}
-
 }
+
 
 .carousel-inner {
   position: relative;
@@ -6943,12 +6942,12 @@ button.close {
     display: table-cell !important;
   }
 .navbar-brand > img {
-	margin-top: -50px;
+	margin-top: -80px;
 	margin-right: -1px;
 	margin-left: 0px;
-	margin-bottom: -71px;
+	margin-bottom: -81px;
 	display: inline;
-	width: 300px;
+	width: 250px;
 }
 .navbar-right {
 	float: right !important;
