@@ -907,7 +907,7 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 .pmd-sidebar-overlay.pmd-sidebar-overlay-active{ opacity: 0.5; visibility: visible; -webkit-transition-delay: 0; -moz-transition-delay: 0; transition-delay: 0;}
 
 /* -- Sidebar --------------------------------------- */
-.pmd-sidebar {position: relative; display: block; min-height: 100%; overflow-y: hidden; overflow-x: hidden; border: none; -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); padding-top:64px; background:#fff; width: 280px; -webkit-transform: translate3d(-280px, 0, 0); -moz-transform: translate3d(-280px, 0, 0); transform: translate3d(-280px, 0, 0);}
+.pmd-sidebar {position: relative; display: block; min-height: 100%; overflow-y: auto; overflow-x: hidden; border: none; -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); -o-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); padding-top:64px; background:#fff; width: 280px; -webkit-transform: translate3d(-280px, 0, 0); -moz-transform: translate3d(-280px, 0, 0); transform: translate3d(-280px, 0, 0);}
 .pmd-sidebar:before, .pmd-sidebar:after { content: " "; display: table;}
 .pmd-sidebar:after { clear: both;}
 .pmd-sidebar::-webkit-scrollbar-track { border-radius: 2px;}
