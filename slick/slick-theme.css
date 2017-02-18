@@ -53,7 +53,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: #fff;
+    color: rgba(229,229,229, 0.5);
     outline: none;
     background: transparent;
 }

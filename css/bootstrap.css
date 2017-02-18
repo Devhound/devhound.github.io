@@ -6561,8 +6561,15 @@ button.close {
 .carousel {
 	position: relative;
 	width: 100%;
+  margin-top: 100px;
 }
-
+@media screen and (max-width: 768px) {
+  .carousel {
+  	position: relative;
+  	width: 100%;
+    margin-top: 60px;
+  }
+}
 @media screen and (max-width: 768px) {
 	.carousel-inner > .item > a > img {
 	height: auto;

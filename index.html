@@ -23,7 +23,7 @@
 </head>
 <body>
 <div class="pmd-sidebar-overlay"></div>
-<nav class="navbar navbar-default pmd-navbar pmd-z-depth">
+<nav class="navbar navbar-default navbar-fixed-top pmd-navbar pmd-z-depth">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -234,12 +234,12 @@
   <div class="row">
    <h1 class="section-title-black">Programs &amp; Events</h1>
 <div class="filters-button-group button-group" align="center">
-  <button class="button is-checked pmd-ripple-effect pmd-z-depth-1" align="center" data-filter="*">show all</button>
-  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".groupfit">Group Fitness</button>
-  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".intramurals">Intramurals</button>
-  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".opc">Outdoor Pursuits</button>
-  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".special">Special Events</button>
-  <button class="button pmd-ripple-effect pmd-z-depth-1" align="center" data-filter=".aquatics">Aquatics</button>
+  <button class="button is-checked pmd-ripple-effect pmd-btn-raised" align="center" data-filter="*">show all</button>
+  <button class="button pmd-ripple-effect pmd-btn-raised" align="center" data-filter=".groupfit">Group Fitness</button>
+  <button class="button pmd-ripple-effect pmd-btn-raised" align="center" data-filter=".intramurals">Intramurals</button>
+  <button class="button pmd-ripple-effect pmd-btn-raised" align="center" data-filter=".opc">Outdoor Pursuits</button>
+  <button class="button pmd-ripple-effect pmd-btn-raised" align="center" data-filter=".special">Special Events</button>
+  <button class="button pmd-ripple-effect pmd-btn-raised" align="center" data-filter=".aquatics">Aquatics</button>
 </div>
 </div>
 <div class="grid">
@@ -408,7 +408,7 @@ $(document).ready(function(){
     // settings: "unslick"
     // instead of a settings object
   ],
-      prevArrow: '<button type="button" class="slick-prev slick-arrow"><span class="fa fa-chevron-left"></span></button>',
+      prevArrow: '<button type="button" class="slick-prev slick-arrow pmd-ripple-effect"><span class="fa fa-chevron-left"></span></button>',
       nextArrow: '<button type="button" class="slick-next slick-arrow"><span class="fa fa-chevron-right"></span></button>'
       });
     });
