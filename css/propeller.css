@@ -772,9 +772,9 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 @media (max-width: 768px) {
  .pmd-navbar .navbar-nav > li > a {
 	line-height: 24px;
-    font-size: 1.5rem;
+    font-size: 1rem;
  }
-	
+
 }
 
 .pmd-navbar .navbar-nav > li > a { line-height: 24px;}
