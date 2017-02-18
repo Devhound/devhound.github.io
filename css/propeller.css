@@ -781,7 +781,7 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 @media (min-width: 768px) {
 .pmd-navbar .navbar-nav > li > a { padding-top:20px; padding-bottom:20px;}
 }
-.pmd-navbar .navbar-nav > li > a{ text-transform:uppercase;}
+.pmd-navbar .navbar-nav > li > a{ text-transform:capitalize;}
 .pmd-navbar .navbar-toggle{margin-top: 16px; float:left;}
 .pmd-navbar.navbar .btn.pmd-btn-fab{margin: 12px 0; padding:0;}
 @media (max-width: 767px) {
