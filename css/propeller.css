@@ -792,7 +792,7 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 .pmd-navbar .navbar-toggle{border-radius: 50%; border:none; height:40px; width:40px; padding:10px; margin-top: 12px; margin-right:8px;}
 .pmd-navbar .navbar-toggle .icon-bar{ width:20px;}
 
-.pmd-sidebar-overlay, .pmd-sidebar-left-overlay, .right-pmd-sidebar-overlay { visibility: hidden; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; background: #000; z-index:998; -webkit-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -moz-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);}
+.pmd-sidebar-overlay, .pmd-sidebar-left-overlay, .right-pmd-sidebar-overlay { visibility: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; background: #000; z-index:998; -webkit-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -moz-transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); transition: visibility 0 linear 0.4s, opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1); -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);}
 .pmd-sidebar-overlay.pmd-sidebar-overlay-active, .pmd-sidebar-left-overlay.active, .right-pmd-sidebar-overlay.active { opacity: 0.5; visibility: visible; -webkit-transition-delay: 0; -moz-transition-delay: 0; transition-delay: 0;}
 
 .navbar-form .btn{padding:9px 14px}
