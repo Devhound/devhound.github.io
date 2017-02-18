@@ -11,9 +11,7 @@
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url("path/to/font-awesome/css/font-awesome.min.css");
 }
 
 .slick-active
@@ -23,18 +21,18 @@
 	padding-top: 20px;
 	border-radius: 15px;
 	}
-	
+
 .slick-active:hover {
     color: #CC0000;
     outline: none;
     background: #fff;
-}	
-	
+}
+
 /* Arrows */
 .slick-prev,
 .slick-next
 {
-	font-size: 0;
+	font-size: 20px;
 	line-height: 0;
 	position: absolute;
 	top: 35%;
@@ -56,7 +54,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #fff;
     outline: none;
     background: transparent;
 }
@@ -102,11 +100,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '';
 }
 
 .slick-next
@@ -120,11 +118,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
 }
 
 /* Dots */
