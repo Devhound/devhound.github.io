@@ -172,6 +172,54 @@
     </div>
   </div>
   <hr>
+  <div class="container">
+    <div class="row">
+      <div align="center">
+
+        <button data-target="#center-dialog" data-toggle="modal" class="btn pmd-ripple-effect btn-primary" type="button">Hours</button>
+          <div tabindex="-1" class="modal fade" id="center-dialog" style="display: none;" aria-hidden="true">
+	           <div class="modal-dialog">
+		             <div class="modal-content">
+
+			              <div class="pmd-modal-media modal-body">
+                      <div id="calendar1">
+
+                              <style>
+                              .fc-event-dot {
+                                   display: none;
+                              body {
+                               margin: 40px 10px;
+                               padding: 0px;
+                               font-family: "Lucida Grande";
+                               font-size: 12px;
+                              }
+                              #calendar1 {
+                               max-width: 900px;
+                               margin: 100px auto;
+                               background: #cc0000;
+                               border-style: none;
+                               border-color: #ffffff;
+                              }
+                              </style>
+                            </div>
+
+
+
+
+                    </div>
+
+
+		             </div>
+	              </div>
+                </div>
+
+
+
+
+
+              </div>
+    </div>
+  </div>
 
 <div class="container">
   <div class="row">
@@ -344,10 +392,15 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="fullcalendar/lib/moment.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="js/fit-columns.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="fullcalendar/gcal.js"></script>
+<script type="text/javascript" src="fullcalendar/fullcalendar.min.js"></script>
+
+
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/propeller.js"></script>
 
@@ -413,5 +466,34 @@ $(document).ready(function(){
       });
     });
   </script>
+  <script type="text/javascript">// <![CDATA[
+  $(document).ready(function() {
+      $('#calendar1').fullCalendar({
+  header: {
+          left: 'prev,next,listDay,listWeek',
+          center: '',
+          right: 'title'
+        },
+        views: {
+          listDay: { buttonText: 'Today' },
+          listWeek: { buttonText: 'Week' }
+        },
+        defaultView: 'listDay',
+  			navLinks: true, // can click day/week names to navigate views
+  			editable: true,
+        height: 425,
+        googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
+        // US Holidays
+        events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
+        eventClick: function(event) {
+          window.open(event.url, 'gcalevent', 'width=400,height=600');
+          return false;
+        },
+        loading: function(bool) {
+          $('#loading').toggle(bool);
+        }
+      });
+    });
+  // ]]></script>
 </body>
 </html>
