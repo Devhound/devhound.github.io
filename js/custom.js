@@ -40,3 +40,7 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 });
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
