@@ -38,7 +38,7 @@
       </div>
 
       <ul class="nav navbar-nav pmd-sidebar-nav">
-
+        <li><a href="#" data-target="#center-dialog1" data-toggle="modal" class="pmd-ripple-effect" data-sidebar="true">Hours<span><i class="fa fa-clock-o" aria-hidden="true" style="margin-left:2px;"></i></span></a>
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Intramurals<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
             <li><a aria-expanded="false" href="#">Sport Registration Dates</a></li>
@@ -123,7 +123,6 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </li>
-
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -175,14 +174,12 @@
   <div class="container">
     <div class="row">
       <div align="center">
-
-        <button data-target="#center-dialog" data-toggle="modal" class="btn pmd-ripple-effect btn-primary" type="button">Hours</button>
-          <div tabindex="-1" class="modal fade" id="center-dialog" style="display: none;" aria-hidden="true">
+          <div tabindex="-1" class="modal fade" id="center-dialog1" style="display: none;" aria-hidden="true">
 	           <div class="modal-dialog">
 		             <div class="modal-content">
 
-			              <div class="pmd-modal-media modal-body">
-                      <div id="calendar">
+			              <div class="modal-body">
+                      <div id="calendar" style="height:425px;">
 
                               <style>
                               .fc-event-dot {
@@ -202,24 +199,13 @@
                               }
                               </style>
                             </div>
-
-
-
-
-                    </div>
-
-
-		             </div>
-	              </div>
-                </div>
-
-
-
-
-
-              </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -397,8 +383,8 @@
 <script type="text/javascript" src="js/isotope.pkgd.js"></script>
 <script type="text/javascript" src="js/fit-columns.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="fullcalendar/gcal.js"></script>
 <script type="text/javascript" src="fullcalendar/fullcalendar.min.js"></script>
+<script type="text/javascript" src="fullcalendar/gcal.js"></script>
 
 
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
@@ -470,21 +456,21 @@ $(document).ready(function(){
   $(document).ready(function() {
       $('#calendar').fullCalendar({
   header: {
-          left: 'prev,next,listDay,listWeek',
-          center: '',
-          right: 'title'
+          left: '',
+          center: 'prev,next,listDay,listWeek',
+          right: ''
         },
         views: {
           listDay: { buttonText: 'Today' },
           listWeek: { buttonText: 'Week' }
         },
-        defaultView: 'listDay',
+        defaultView: '',
   			navLinks: true, // can click day/week names to navigate views
   			editable: true,
         height: 425,
-        googleCalendarApiKey: 'AIzaSyAJ8FW3G8QdVUijSeBiSNTai9bKDEcSKc',
+        googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
         // US Holidays
-        events: 'https://calendar.google.com/calendar/embed?src=a8n57484qtiggrf5p9tr2rnveg%40group.calendar.google.com&ctz=America/Chicago',
+        events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
         eventClick: function(event) {
           window.open(event.url, 'gcalevent', 'width=400,height=600');
           return false;
