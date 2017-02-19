@@ -182,7 +182,7 @@
 		             <div class="modal-content">
 
 			              <div class="pmd-modal-media modal-body">
-                      <div id="calendar1">
+                      <div id="calendar">
 
                               <style>
                               .fc-event-dot {
@@ -466,9 +466,9 @@ $(document).ready(function(){
       });
     });
   </script>
-  <script type="text/javascript">// <![CDATA[
+  <script type="text/javascript">
   $(document).ready(function() {
-      $('#calendar1').fullCalendar({
+      $('#calendar').fullCalendar({
   header: {
           left: 'prev,next,listDay,listWeek',
           center: '',
@@ -482,9 +482,9 @@ $(document).ready(function(){
   			navLinks: true, // can click day/week names to navigate views
   			editable: true,
         height: 425,
-        googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
+        googleCalendarApiKey: 'AIzaSyAJ8FW3G8QdVUijSeBiSNTai9bKDEcSKc',
         // US Holidays
-        events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
+        events: 'https://calendar.google.com/calendar/embed?src=a8n57484qtiggrf5p9tr2rnveg%40group.calendar.google.com&ctz=America/Chicago',
         eventClick: function(event) {
           window.open(event.url, 'gcalevent', 'width=400,height=600');
           return false;
@@ -494,6 +494,6 @@ $(document).ready(function(){
         }
       });
     });
-  // ]]></script>
+</script>
 </body>
 </html>
