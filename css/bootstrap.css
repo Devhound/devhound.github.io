@@ -10,14 +10,58 @@
 
 /*CUSTOM CSS */
 
+.section-title-white {
+    text-align: center;
+	font-family: Charter, sans-serif;
+    letter-spacing: 0;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #fff;
+}
+.section-title-white:after {
+    background-color: #cc0000;
+}
 
+.section-title-white:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10%;
+    max-width: 6rem;
+    height: 0.2rem;
+    background-color: #cc0000;
+    margin: 1rem auto 2rem;
+}
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: 0.6;
+}
+
+.body-copy {
+	
+	font-family: Charter;
+	font-size: 10px;
+	line-height: 1.2;
+	text-indent: 30px;
+	margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+	.body-copy {
+	font-size: 24px;
+	}
+}
 
 .section-title-black {
     text-align: center;
     font-family: Charter, sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #000;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
@@ -5280,12 +5324,20 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-.jumbotron {
+.jumbotron {	
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: #fff;
+  height: auto;
+  background-color: #fff;
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-bottom: 0;
+  background-size: 100% !important;
+  background-image: url("/images/header-image-2.jpg");
+  background-repeat: none;
+  margin-top: 50px;
 }
 .jumbotron h1,
 .jumbotron .h1 {
