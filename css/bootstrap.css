@@ -5330,12 +5330,12 @@ a.badge:focus {
   margin-bottom: 30px;
   color: #fff;
   height: auto;
-  background-color: #fff;
+  background-color: transparent;
   font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   border-bottom: 0;
   background-size: 100% !important;
-  background-image: url("/images/header-image-2.jpg");
+  background-image: url("../images/header-image-2.jpg");
   background-repeat: none;
   margin-top: 50px;
 }
