@@ -489,7 +489,7 @@ h2.pmd-card-title-text{ font-size:1.5rem; font-weight:400; margin-bottom:2px;}
 .modal-body .list-group-item{}
 .modal-body > p:last-child{margin-bottom:0;}
 .modal-footer{padding:16px;}
-.pmd-modal-action{padding:8px 4px;width: 200px;margin: 0 auto;}
+.pmd-modal-action{padding:8px 4px;width: 100px;margin: 0 auto;}
 .pmd-modal-action .btn.pmd-btn-fab {padding: 0;}
 .pmd-modal-action.pmd-modal-bordered {border-top:1px solid #e5e5e5;}
 .pmd-modal-action .btn {min-width: inherit;padding: 10px 8px;margin-bottom: 8px;margin-left: 4px;margin-right: 4px;margin-top:8px;}
@@ -570,7 +570,7 @@ h2.pmd-card-title-text{ font-size:1.5rem; font-weight:400; margin-bottom:2px;}
 }
 
 /*input focus bar*/
-.pmd-textfield-focused{ display: block;  width: 100%; height:2px; background-color:#e2e2e2; display:block; top:-1px;  background-color:#4285f4; transform:scaleX(0); -moz-transform: scaleX(0); -ms-transform: scaleX(0); -o-transform: scaleX(0);  -webkit-transform: scaleX(0); position:relative; z-index:2;}
+.pmd-textfield-focused{ display: block;  width: 100%; height:2px; background-color:#FF1919; display:block; top:-1px;  background-color:#FF1919; transform:scaleX(0); -moz-transform: scaleX(0); -ms-transform: scaleX(0); -o-transform: scaleX(0);  -webkit-transform: scaleX(0); position:relative; z-index:2;}
 .pmd-textfield.pmd-textfield-floating-label-active .pmd-textfield-focused { transform: scaleX(1); -moz-transform: scaleX(1); -ms-transform: scaleX(1); -o-transform: scaleX(1); -webkit-transform: scaleX(1);}
 
 /*paper input*/
