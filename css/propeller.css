@@ -489,7 +489,7 @@ h2.pmd-card-title-text{ font-size:1.5rem; font-weight:400; margin-bottom:2px;}
 .modal-body .list-group-item{}
 .modal-body > p:last-child{margin-bottom:0;}
 .modal-footer{padding:16px;}
-.pmd-modal-action{padding:8px 4px;}
+.pmd-modal-action{padding:8px 4px;width: 200px;margin: 0 auto;}
 .pmd-modal-action .btn.pmd-btn-fab {padding: 0;}
 .pmd-modal-action.pmd-modal-bordered {border-top:1px solid #e5e5e5;}
 .pmd-modal-action .btn {min-width: inherit;padding: 10px 8px;margin-bottom: 8px;margin-left: 4px;margin-right: 4px;margin-top:8px;}
@@ -559,7 +559,7 @@ h2.pmd-card-title-text{ font-size:1.5rem; font-weight:400; margin-bottom:2px;}
 .pmd-sidebar-open.pmd-navbar-sidebar .pmd-dropdown-menu-container .dropdown-menu{transition:none;}
 .pmd-sidebar-open.pmd-navbar-sidebar .pmd-dropdown-menu-bg{ display:none;}
 .pmd-sidebar .open > .pmd-dropdown-menu-container{ position:static;}
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
 .pmd-sidebar-dropdown .pmd-dropdown-menu-container{ position:static; transition:none;}
 .pmd-sidebar-dropdown .dropdown-menu{transition:none; opacity:1;}
 }
@@ -778,11 +778,11 @@ input[type="checkbox][disabled"]:checked + .pmd-switch-label::after {background-
 }
 
 .pmd-navbar .navbar-nav > li > a { line-height: 24px;}
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
 .pmd-navbar .navbar-nav > li > a { padding-top:20px; padding-bottom:20px;}
 }
 .pmd-navbar .navbar-nav > li > a{ text-transform:capitalize;}
-.pmd-navbar .navbar-toggle{margin-top: 16px; float:left;}
+.pmd-navbar .navbar-toggle{margin-top: 16px; float:right;}
 .pmd-navbar.navbar .btn.pmd-btn-fab{margin: 12px 0; padding:0;}
 @media (max-width: 767px) {
 .pmd-navbar.navbar .btn.pmd-btn-fab{margin: 8px 0;}

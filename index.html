@@ -23,13 +23,15 @@
 </head>
 <body>
 <div class="pmd-sidebar-overlay"></div>
-<nav class="navbar navbar-default navbar-fixed-top pmd-navbar pmd-z-depth">
-  <div class="container">
+
+<nav class="navbar navbar-default pmd-navbar pmd-z-depth-2">
+<div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle pmd-navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
       <a class="navbar-brand" href="#"><img src="images/new-rec-sports-logo.gif" alt="Brand" width="200"></a>
     </div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse pmd-navbar-sidebar" role="navigation">
       <div class="media-right pull-right">
@@ -38,7 +40,7 @@
       </div>
 
       <ul class="nav navbar-nav pmd-sidebar-nav">
-        <li><a href="#" data-target="#center-dialog1" data-toggle="modal" title="Hours" class="pmd-ripple-effect" data-sidebar="true"><span class="hidden-lg">Hours</span><span><i class="fa fa-clock-o" aria-hidden="true" style="margin-left:2px;"></i></span></a>
+        <li><a href="#" data-target="#form-dialog" data-toggle="modal" title="Hours" class="pmd-ripple-effect" data-sidebar="true"><span class="hidden-lg">Search</span><span><i class="fa fa-search" aria-hidden="true" style="margin-left:2px;"></i></span></a>
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Intramurals<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
             <li><a aria-expanded="false" href="#">Sport Registration Dates</a></li>
@@ -124,13 +126,43 @@
           </ul>
         </li>
       </ul>
+        </nav>
     </div>
     <!-- /.navbar-collapse -->
+
   </div>
   <!-- /.container-fluid -->
 
-</nav>
-<div class="container-fluid">
+  <div tabindex="-1" class="modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
+  	<div class="modal-dialog">
+  		<div class="modal-content">
+
+  			<div class="modal-body">
+  				<form action="http://google.ttu.edu/search" method="GET" class="form-horizontal">
+
+  					<div class="form-group pmd-textfield pmd-textfield-floating-label">
+  						<label for="q">Search Texas Tech University</label>
+  						<input type="text" class="mat-input form-control search-text" name ="q" id="q" onfocus="this.value=''" >
+              <input name="site" type="hidden" value="Campus">
+              <input name="client" type="hidden" value="texas_tech">
+              <input name="output" type="hidden" value="xml_no_dtd">
+              <input name="proxystylesheet" type="hidden" value="texas_tech">
+
+
+
+
+
+  			</div>
+  			<div class="pmd-modal-action">
+            <input action="submit" name="submit" alt="search" type="image" src="images/search-button.gif">
+            </form>
+        </div>
+  		</div>
+  	</div>
+  </div>
+</div>
+
+<div class="container">
   <div class="row">
     <div>
       <div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -141,19 +173,19 @@
           <li data-target="#carousel1" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="images/header-image-1.png" alt="Second slide image" width="100%" class="center-block">
+          <div class="item active"><img src="http://placehold.it/1680x840" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
               <h4></h4>
 
             </div>
           </div>
-          <div class="item"><img src="images/header-image-2.jpg" alt="Second slide image" width="100%" class="center-block">
+          <div class="item"><img src="http://placehold.it/1680x840" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
               <h4></h4>
 
             </div>
           </div>
-          <div class="item"><img src="images/header-image-3.jpg" alt="Second slide image" width="100%" class="center-block">
+          <div class="item"><img src="http://placehold.it/1680x840" alt="Second slide image" width="100%" class="center-block">
             <div class="carousel-caption">
               <h4></h4>
 
@@ -172,50 +204,9 @@
   </div>
   <hr>
 
-    <div class="row">
-      <div align="center">
-          <div tabindex="-1" class="modal fade" id="center-dialog1" style="display: none;" aria-hidden="true">
-	           <div class="modal-dialog">
-		             <div class="modal-content">
-                   <div class="pmd-card-title">
-                     <div class="pull-right">
-                    <a href="#" data-target="#center-dialog1" data-toggle="modal"><button type="button"><span><i class="fa fa-times" aria-hidden="true" style="color: #000;"></i></span></a>
-                    </button>
-                     </div>
-				                 <h2 class="pmd-card-title-text">Rec Facility Hours</h2>
-				                     <span class="pmd-card-subtitle-text">press Today or Week to display hours</span> </div>
-			              <div class="pmd-modal-media">
-                      <div id="calendar" style="height:425px;">
-
-                              <style>
-                              .fc-event-dot {
-                                   display: none;
-                              body {
-                               margin: 40px 10px;
-                               padding: 0px;
-                               font-family: "Lucida Grande";
-                               font-size: 12px;
-                              }
-                              #calendar1 {
-                               max-width: 900px;
-                               margin: 100px auto;
-                               background: #cc0000;
-                               border-style: none;
-                               border-color: #ffffff;
-                              }
-                              </style>
-                            </div>
-                          </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
 <div class="container">
   <div class="row">
-  <h3 class="section-title-black">Facilities</h3>
+
     <div class="col-md-4 col-sm-4 col-xs-6 margino hvr-grow">
      <a href="http://www.depts.ttu.edu/recsports/intramurals/team.php" class="hover-cover pmd-z-depth-4 pmd-ripple-effect">
     <img src="images/intramurals-tile.png" class="img-responsive" alt="Placeholder image">
