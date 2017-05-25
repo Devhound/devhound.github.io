@@ -42,7 +42,7 @@
 }
 
 .body-copy {
-	
+
 	font-family: Charter;
 	font-size: 1rem;
 	line-height: 1.2;
@@ -4506,7 +4506,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 1200px) {
   .navbar-header {
-    float: left;
+    float: none;
   }
 }
 @media (min-width: 1200px) {
@@ -4607,7 +4607,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-width: 1px 0 0;
 }
 .navbar-brand {
-  float: left;
+  float: none;
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
@@ -4623,6 +4623,22 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 	margin-left: 0px;
 	margin-bottom: -71px;
 }
+
+@media (min-width: 1200px) {
+ .navbar-brand {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+ }
+
+
+
+}
+
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
@@ -4663,6 +4679,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 	margin-right: -15px;
 	margin-left: -15px;
 	margin-bottom: 7.5px;
+
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4696,6 +4713,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav {
     float: none;
     vertical-align: middle;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+
   }
   .navbar-nav > li {
     float: left;
@@ -5325,7 +5347,7 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-.jumbotron {	
+.jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
