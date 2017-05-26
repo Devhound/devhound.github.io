@@ -13,6 +13,11 @@
     font-style: normal;
 }
 
+.slick-slide {
+  color: #fff;
+
+}
+
 .slick-active
 {
 	width: 200px;
