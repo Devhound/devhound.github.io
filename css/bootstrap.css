@@ -30,6 +30,12 @@
   margin-top: 340px;
 }
 
+@media (max-width: 480px) {
+	.vertical-text {
+	font-size: 2rem;
+	}
+}
+
 .header-contain {
 
   width: 300px;
