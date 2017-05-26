@@ -58,13 +58,14 @@
 
 .section-title-black {
     text-align: center;
-    font-family: Charter, sans-serif;
-    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000;
 	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 .section-title-black:after {
@@ -80,11 +81,14 @@
 
 .section-title-white {
     text-align: center;
-    font-family: Charter, sans-serif;
-    letter-spacing: 2px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
+    margin-top: 2rem;
+  	margin-bottom: -1rem;
 }
 
 .section-title-white:after {
