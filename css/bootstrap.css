@@ -10,6 +10,34 @@
 
 /*CUSTOM CSS */
 
+
+.header-margin {
+
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.vertical-text {
+	transform: rotate(-90deg);
+	transform-origin: left bottom 0;
+  text-transform: uppercase;
+  float:left;
+  font-size: 3rem;
+  z-index:0;
+  color: #f1f1f1;
+  position: absolute;
+  margin-top: 340px;
+}
+
+.header-contain {
+
+  width: 300px;
+  margin: 0 auto;
+
+
+}
+
 .section-title-white {
     text-align: center;
 	font-family: Charter, sans-serif;
