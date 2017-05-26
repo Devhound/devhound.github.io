@@ -39,12 +39,6 @@
 
     }
 
-.fc-toolbar .fc-left {
-
-  display: none;
-
-}
-
 
     .fc-right {
 
@@ -54,6 +48,10 @@
 
     }
 
+.fc-toolbar {
+  background-color: #fff;
+
+}
 
     .fc-list-table {
 
@@ -87,6 +85,7 @@
     color: #cc0000;
 }
 
+
     #loading {
       display: none;
       position: absolute;
@@ -97,11 +96,10 @@
     #calendar {
       max-width: 265px;
       float: none;
-      margin: 100px auto;
+      margin: 0 auto;
       padding: 0px;
       font-family: "Helvetica";
       font-size: 1rem;
-      z-index: 900;
 
       }
     }
@@ -252,23 +250,56 @@
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row header-margin">
+
+
+
+
+<div class="jumbotron">
+<div class="container">
+
+  <center>
+    <h1>TTU REC SPORTS</h1>
+  </center>
+
+    <p>
+    </p>
+
+    <center><a class="btn pmd-btn btn-primary btn-lg==md" href="#" role="button">Learn more &raquo;</a></center>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+
+
     <div class="col-md-6">
 
+
     </div>
+
+
+
     <div class="col-md-6">
-      <div class="header-contain">
-      <h2 class="vertical-text">Today's Hours</h2>
-      <div class="pmd-z-depth-5" id="calendar">
-      </div>
-
+      <div class="center-reg">
+        <h2 class="vertical-text">Rec Hours</h2>
+          <div id="calendar" class="pmd-z-depth-5">
+          </div>
       </div>
     </div>
 
 
-    </div>
   </div>
+</div>
 
 
 <div class="container">
@@ -330,7 +361,7 @@
 
   <div class="page-section xl dark">
   <div class="container">
-  <h3 class="section-title-white">Quick Links</h3>
+  <h3 class="section-title-black">Quick Links</h3>
   <br /><br />
   						<div class="slidr">
     						<a href="#" data-target="#center-dialog1" data-toggle="modal" class="pmd-ripple-effect"><div><i class="fa fa-clock-o  fa-5x"></i><h2 class="text-center" style="margin-bottom: 0;">Hours</h2></div></a>
@@ -751,7 +782,7 @@ $(document).ready(function(){
 
 
   header: {
-          left: 'listDay',
+          left: 'listDay, listWeek',
           center: 'title',
           right: 'prev,next'
         },
