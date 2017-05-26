@@ -258,7 +258,7 @@ button:focus {
 @media (max-width: 480px) {
 .element-item {
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 }
 .gutter-sizer {
