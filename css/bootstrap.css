@@ -58,13 +58,13 @@
 
 .section-title-black {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     font-family: Helvetica, sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #000;
-	margin-top: 5rem;
+	margin-top: 7rem;
 	margin-bottom: 2rem;
 }
 
@@ -81,11 +81,11 @@
 
 .section-title-white {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     font-family: Helvetica, sans-serif;
     letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     margin-top: 2rem;
   	margin-bottom: -1rem;
@@ -161,6 +161,7 @@
     background-color: #cc0000;
     border: 1px solid #18191b;
     border-width: 1px 0;
+    margin-top: 5rem;
 }
 
 .page-section.xl {
