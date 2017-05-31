@@ -199,7 +199,7 @@
 
 .Facilityletter {
 
-  font-size: 25em;
+  font-size: 15em;
   color: #fff;
   text-shadow: 1px 1px 18px #666;
   font-weight: 900;
@@ -224,11 +224,12 @@
 
 .vertical-text {
 	transform: rotate(90deg);
+	transform-origin: top 0;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   color: #cc0000;
   position: absolute;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   font-weight: 900;
   font-family: Helvetica;
 }
