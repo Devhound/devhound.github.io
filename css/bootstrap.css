@@ -7281,12 +7281,12 @@ button.close {
     display: table-cell !important;
   }
 .navbar-brand > img {
-	margin-top: -80px;
+	margin-top: -50px;
 	margin-right: -1px;
 	margin-left: 0px;
-	margin-bottom: -81px;
+	margin-bottom: -50px;
 	display: inline;
-	width: 250px;
+	width: 350px;
 }
 .navbar-right {
 	float: right !important;
