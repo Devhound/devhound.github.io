@@ -45,7 +45,7 @@
   font-family: Helvetica;
   text-transform: uppercase;
   font-size: 2em;
-  font-weight: 60;
+  font-weight: 600;
   margin-top: 100px;
   color: #cc0000;
   background-color: #ffffff;
@@ -84,7 +84,7 @@
   background-color: #cc0000;
   top:0;
   right: 0;
-  z-index:1001;
+  z-index:1;
   color:#fff;
   font-size: 2em;
   border-width: 30px;
