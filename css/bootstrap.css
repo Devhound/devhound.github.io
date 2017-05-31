@@ -18,10 +18,6 @@
   font-size: 9em;
   font-weight: 600;
   color: #ffffff;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  margin-left: 5%;
   margin-bottom: 150px;
 
 
@@ -31,12 +27,12 @@
 @media (max-width: 1200px) {
 .featuretext {
   font-size: 6em;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 
 }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .featuretext {
   font-size: 2em;
   margin-bottom: 50px;
@@ -49,20 +45,17 @@
   font-family: Helvetica;
   text-transform: uppercase;
   font-size: 2em;
-  font-weight: 600;
-  color: #ffffff;
-  position: absolute;
-  bottom: 0;
-  margin-left: 5%;
-  background-color: #cc0000;
-  border: solid #cc0000;
+  font-weight: 60;
+  margin-top: 50px;
+  color: #cc0000;
+  background-color: #ffffff;
+  border: solid #ffffff;
   border-width: 10px;
   padding: 10px 70px;
   transition: 0.3s linear;
-  width:450px;
   position: absolute;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
 
 
 
@@ -75,7 +68,7 @@ clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .featurebutton {
   font-size: 13px;
   border-width: 5px;
@@ -91,7 +84,7 @@ clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
   font-family: Helvetica;
   background-color: #cc0000;
   top:0;
-  float:right;
+  right: 0;
   z-index:3;
   color:#fff;
   font-size: 2em;
@@ -104,12 +97,13 @@ clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
   margin-top: 50px;
   font-weight: 600;
   transition: 0.3s linear;
+  position: absolute;
 
 
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .hoursbutton {
   font-size: 15px;
   margin-right: 0;
@@ -143,10 +137,13 @@ clip-path: polygon(0 0, 100% 0, 100% 0, 80% 100%, 0 100%);
     top: 0;
     width:100%;
     height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#mainHeaderWrapper p{
-   padding:30px;
+#mainHeaderWrapper h1{
+
 }
 
 .center-reg {
