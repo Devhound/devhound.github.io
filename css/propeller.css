@@ -100,7 +100,7 @@
 
 /* ==========  Typography  ========== */
 html { font-size: 16px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
-body { font-family: 'Roboto'; font-size: 0.875rem; line-height: 1.6; color: #333; background-color: #ffffff;}
+body { font-family: 'Helvetica'; font-size: 0.875rem; line-height: 1.6; font-weight: 400; color: #333; background-color: #ffffff;}
 a{ color: #cc0000; text-decoration: none; outline:none;}
 
 .slickicon {
