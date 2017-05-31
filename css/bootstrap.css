@@ -232,7 +232,6 @@
   letter-spacing: 10px;
   font-weight: 900;
   font-family: Helvetica;
-  position: absolute;
 }
 
 @media (max-width: 480px) {
