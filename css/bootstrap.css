@@ -18,7 +18,7 @@
   font-size: 9em;
   font-weight: 600;
   color: #ffffff;
-  width: 600px;
+  width: 100%;
   position: absolute;
   bottom: 0;
   margin-left: 5%;
@@ -31,7 +31,6 @@
 @media (max-width: 1200px) {
 .featuretext {
   font-size: 6em;
-  width: 200px;
   margin-bottom: 100px;
 
 }
@@ -40,7 +39,6 @@
 @media (max-width: 767px) {
 .featuretext {
   font-size: 2em;
-  width: 200px;
   margin-bottom: 50px;
 
 }
