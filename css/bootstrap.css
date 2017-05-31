@@ -19,6 +19,7 @@
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 150px;
+  position: absolute;
 
 
 
@@ -73,7 +74,6 @@
   font-size: 13px;
   border-width: 5px;
   padding: 0px 10px;
-  width: 155px;
   margin-bottom: 10px;
 
 }
