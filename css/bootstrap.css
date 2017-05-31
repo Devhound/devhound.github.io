@@ -134,6 +134,7 @@
     position: relative;
     background: no-repeat linear-gradient(90deg,rgba(204,0,0,0.7),rgba(0,0,0,0.7)), url(../images/shoelacerunner.jpg) 50% / 100%;
     border-bottom: 0px solid #000;
+    margin-bottom: 10%;
 }
 #mainHeaderWrapper > img{
     vertical-align: top;
@@ -163,23 +164,80 @@
 
 }
 
+.zindextest {
 
+  z-index: 500;
+
+
+}
+
+#FacilityWrapper{
+    position: relative;
+
+    border-bottom: 0px solid #000;
+    margin-bottom: 10%;
+
+
+}
+#FacilityWrapper > img{
+    vertical-align: top;
+    width: 100%; /* max width */
+    opacity: 1;  /* make it transparent */
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+
+}
+#FacilityWrapper > div{
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Facilityletter {
+
+  font-size: 15em;
+  color: #fff;
+  text-shadow: 1px 1px 18px #666;
+  font-weight: 900;
+  font-family: Helvetica;
+
+
+}
+
+.facilitybg {
+
+  /*-webkit-clip-path: polygon(50% 0, 0 0, 0 100%);*/
+  /*clip-path: polygon(50% 0, 0 0, 0 100%);*/
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 5%;
+  background: url(https://unsplash.it/2160/1440/?random);
+
+
+}
 
 .vertical-text {
-	transform: rotate(-90deg);
-	transform-origin: left bottom 0;
+	transform: rotate(90deg);
+
   text-transform: uppercase;
-  float:left;
-  font-size: 3rem;
-  z-index:0;
-  color: #f1f1f1;
+  font-size: 25px;
+  color: #cc0000;
   position: absolute;
-  margin-top: 340px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: Helvetica;
+  padding-top: 65px;
 }
 
 @media (max-width: 480px) {
 	.vertical-text {
-	font-size: 2.5rem;
+	font-size: 20px;
 	}
 }
 
@@ -349,10 +407,9 @@
 }
 
 .centered {
-position:relative;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%)
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
