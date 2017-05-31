@@ -15,7 +15,7 @@
 
   font-family: Helvetica;
   text-transform: uppercase;
-  font-size: 9em;
+  font-size: 8em;
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 150px;
@@ -62,9 +62,9 @@
 }
 
 .featurebutton:hover {
-  color: #cc0000;
-  background-color: #ffffff;
-  border-color:#ffffff;
+  color: #fff;
+  background-color: #cc0000;
+  border-color:#cc0000;
 
 }
 
@@ -5044,7 +5044,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
 	background-color: #FFFFFF;
-  z-index: 1000;
+  z-index: 1;
 }
 .navbar-default .navbar-brand {
   color: #777;
