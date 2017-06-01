@@ -11,6 +11,9 @@
 /*CUSTOM CSS */
 
 
+
+
+
 .featuretext {
 
   font-family: Helvetica;
@@ -176,14 +179,61 @@
 
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
   color: #7F7F7F;
+
 
 
 }
 
+
+@media (max-width: 480px) {
+
+.quicklinks {
+
+  font-size:18px;
+
+
+}
+
+
+
+}
+
+.linkslist li{
+
+padding: 10px 0;
+font-size: 18px;
+text-transform: uppercase;
+text-decoration: underline;
+color: #000;
+font-family: Helvetica;
+font-weight: bold;
+letter-spacing: 1px;
+list-style: none;
+
+
+
+}
+
+.linkslist ul{
+
+float: left;
+width: 400px;
+}
+
+.linkslist a{
+
+color:#000;
+transition: 0.3s ease;
+}
+
+.linkslist a:hover{
+
+color:#cc0000;
+}
 
 #FacilityWrapper{
     position: relative;
