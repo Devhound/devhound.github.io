@@ -132,7 +132,7 @@
 
 #mainHeaderWrapper{
     position: relative;
-    background: no-repeat linear-gradient(90deg,rgba(204,0,0,0.7),rgba(0,0,0,0.7)), url(../images/shoelacerunner.jpg) 50% / 100%;
+    background: linear-gradient(90deg,rgba(204,0,0,0.7),rgba(0,0,0,0.7)), url(../images/shoelacerunner.jpg) 50% / 100%;
     border-bottom: 0px solid #000;
     margin-bottom: 10%;
 }
@@ -173,7 +173,6 @@
 
 #FacilityWrapper{
     position: relative;
-
     border-bottom: 0px solid #000;
     margin-bottom: 10%;
 
