@@ -171,6 +171,20 @@
 
 }
 
+
+.quicklinks {
+
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #7F7F7F;
+
+
+}
+
+
 #FacilityWrapper{
     position: relative;
     border-bottom: 0px solid #000;
@@ -200,12 +214,25 @@
 
 .Facilityletter {
 
-  font-size: 15em;
+  font-size: 25em;
   color: #fff;
   text-shadow: 1px 1px 18px #666;
   font-weight: 900;
   font-family: Helvetica;
   position: relative;
+
+
+}
+
+@media (max-width: 480px) {
+
+  .Facilityletter {
+
+    font-size: 15em;
+
+
+
+  }
 
 
 }
@@ -230,10 +257,13 @@
   text-transform: uppercase;
   font-size: 25px;
   color: #cc0000;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
   font-weight: 900;
   font-family: Helvetica;
+  margin-right: 100px;
 }
+
+
 
 @media (max-width: 480px) {
 	.vertical-text {
