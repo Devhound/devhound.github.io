@@ -318,6 +318,7 @@ color:#cc0000;
 @media (max-width: 480px) {
 	.vertical-text {
 	font-size: 20px;
+  letter-spacing: 5px;
 	}
 }
 
