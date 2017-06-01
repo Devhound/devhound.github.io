@@ -181,7 +181,7 @@
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 4px;
   color: #7F7F7F;
 
 
@@ -423,11 +423,15 @@ color:#cc0000;
 
 .hover-cover {
 	  color: #fff;
+    background-color: #fff;
     position: relative;
     overflow: hidden;
     display: block;
     max-width: 350px;
     margin: 0 auto;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 100%, 0% 100%);
+
 }
 
  .cover-image {
@@ -462,17 +466,37 @@ color:#cc0000;
     top: 0px;
     left: 0px;
     padding: 5%;
-    background: rgba(0,0,0, 0.5);
-    transition: .3s ease;
+    background: linear-gradient(-90deg,rgba(204,0,0,0.7),rgba(0,0,0,0.7));
+    transition: .3s linear;
     max-width: 350px;
+
+}
+
+.facilitywrap {
+
+
+  max-width: 350px;
+  margin: 0 auto;
+
+
+}
+
+.facilitylink {
+
+  padding: 10px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #000;
+  font-family: Helvetica;
+  font-weight: bold;
+  letter-spacing: 1px;
+  list-style: none;
+
+
 }
 
 
-.cover-wrap:hover {
-  background: transparent;
-
-
-}
 
 
 .page-section.dark {
