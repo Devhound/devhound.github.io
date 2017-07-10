@@ -38,7 +38,7 @@
       </div>
 
       <ul class="nav navbar-nav pmd-sidebar-nav">
-        <li><a href="#" data-target="#center-dialog1" data-toggle="modal" title="Hours" class="pmd-ripple-effect" data-sidebar="true"><span class="hidden-lg">Hours</span><span><i class="fa fa-clock-o" aria-hidden="true" style="margin-left:2px;"></i></span></a></li>
+
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Intramurals<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
             <li><a aria-expanded="false" href="#">Sport Registration Dates</a></li>
@@ -154,44 +154,1037 @@
 
 <div class="container">
   <div class="jumbotron">
-            
-       
-              <h1 class="section-title-white white">Intramurals</h1>
+
+
+              <h1 class="section-title-white white">Fitwell Schedule</h1>
             </div>
             </div>
-            
+
    <div class="container">
    <div class="row">
-  <div class="col-md-8 col-md-offset-2">
-<div role="tabpanel">
-                <ul class="nav nav-tabs nav-justified" role="tablist">
-                  <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Registration info</a></li>
-                  <li role="presentation"><a href="#paneTwo1" data-toggle="tab" role="tab" aria-controls="tab2">Field Locations</a></li>
-                  <li role="presentation"><a href="#paneTwo2" data-toggle="tab" role="tab" aria-controls="tab3">F.A.Q</a></li>
-                </ul>
-                <div id="tabContent1" class="tab-content">
-                  <div role="tabpanel" class="tab-pane fade in active" id="home1">
-                    <iframe frameborder="0" height="1000px" style="font-size:1rem;" scrolling="auto" src="https://www.imleagues.com/Integration/Widgets/IntramuralWidget.aspx?SchID=kKVzOxAaiEIbmTGVXjjfvgMM&amp;width=100%&amp;height=100%&amp;type=Intramural&amp;scrolling=auto" width="100%"></iframe>
-<script type="text/javascript" src="//www.imleagues.com/Integration/Widgets/WidgetLoader.ashx?SchID=kKVzOxAaiEIbmTGVXjjfvgMM&width=100%&height=150px&type=Club&scrolling=auto" async></script>
 
 
 
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="paneTwo1">
-                    <p class="body-copy">Not sure where your field is? Check out the Intramural Map! <a href="http://www.depts.ttu.edu/recsports/intramurals/images/IM%20Map.pdf">Click Here</a>
-                    </p>
-                  </div>
-                  <div role="tabpanel" class="tab-pane fade" id="paneTwo2">
-                    <p class="body-copy"><a href="http://www.depts.ttu.edu/recsports/intramurals/FAQ.php">Frequently Asked Questions</a></p>
-                  </div>
-                 
-                </div>
-              </div>
+
+   <style>
+
+   @media (max-width: 991px) {
+
+div.table-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-left: 1px solid #E1E1E1;
+    border-right: 1px solid #E1E1E1;
+}
+}
+
+@media (max-width: 991px)
+{
+  div.table-wrapper > div.table-scrollable {
+    overflow: scroll;
+    overflow-y: hidden;
+}
+}
+
+
+   .table-wrapper {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+
+   }
+
+   .table--block {
+       width: 100%;
+   }
+
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
+
+   .gf-schedule tr.facility td {
+       background: #434343;
+       padding: 10px;
+       border: none;
+   }
+
+   .gf-schedule tr.facility td h4 {
+       margin: 0;
+   }
+
+   .gf-schedule td {
+       padding: 8px;
+       font-size: 14px;
+       line-height: 14px;
+       font-weight: bold;
+       color: #fff;
+       text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+       border-bottom: 1px solid #dedede;
+   }
+
+   .gf-schedule td span {
+       display: block;
+       font-size: 12px;
+       font-weight: normal;
+       text-shadow: none;
+       opacity: 0.8;
+   }
+
+   .gf-schedule td a, .gf-schedule td a:visited, .gf-schedule td a:active {
+       color: #fff;
+   }
+
+   .gf-schedule tr.head td {
+       background: #828282;
+       font-weight: normal;
+       text-transform: uppercase;
+       border: none;
+   }
+
+   .gf-schedule .first {
+       text-shadow: none;
+       color: #585858;
+       font-weight: normal;
+   }
+
+   .gf-schedule .second {
+       text-shadow: none;
+       color: #585858;
+       font-weight: normal;
+   }
+
+   .table--banded tr th, .table--banded tr td {
+       padding: 8px 10px;
+   }
+
+   th, td {
+       padding: 12px 15px;
+       text-align: left;
+       border-bottom: 1px solid #E1E1E1;
+   }
+
+   .gf-schedule td.gf-time, .gf-schedule td.gf-room {
+       width: 54px !important;
+   }
+
+   .strength {
+       background: #7AAE96 !important;
+   }
+
+   .cycling {
+       background: #6396AC !important;
+   }
+
+   .mind-body {
+       background: #DE5D57 !important;
+   }
+
+   .cardio {
+       background: #D7C266 !important;
+   }
+
+   .dance {
+       background: #EEA664 !important;
+   }
+
+   .outdoor {
+       background: #8D5A7E !important;
+   }
+
+   .bootcamp {
+       background: #6078AE !important;
+   }
+
+   .container {
+       position: relative;
+       max-width: 1170px;
+       width: 100%;
+       margin-right: auto;
+       margin-left: auto;
+       box-sizing: border-box;
+   }
+
+   .section-title {
+       margin-bottom: 3rem;
+       color: #333;
+   }
+
+   @media (min-width: 550px) {
+
+   h2, h2 {
+       font-size: 4.2rem;
+   }
+   }
+
+   .page-title:after, .section-title:after {
+       content: "";
+       display: block;
+       position: relative;
+       width: 10%;
+       max-width: 6rem;
+       height: 0.2rem;
+       background-color: #8a8f97;
+       margin: 1rem auto 2rem;
+   }
+
+   .page-title, .section-title {
+       text-align: center;
+
+   }
+
+   .page-section {
+       padding: 4rem 0;
+       box-sizing: border-box;
+   }
+
+   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+       font-family: Helvetica, sans-serif;
+       letter-spacing: 0;
+   }
+
+   h2, .h2 {
+       font-size: 2.4rem;
+       line-height: 1.25;
+       letter-spacing: -.1rem;
+   }
+
+   @media (min-width: 550px) {
+
+   h2, .h2 {
+       font-size: 3.6rem;
+   }
+}
+
+   h4, .h4 {
+       font-size: 1.4rem;
+       line-height: 1.35;
+       letter-spacing: -.08rem;
+   }
+
+   @media (min-width: 550px) {
+
+   h4, h4 {
+       font-size: 3.0rem;
+   }
+}
+   .controls {
+       text-align: center;
+       margin-bottom: 3rem;
+   }
+
+   .controls--bottom {
+       margin-top: 3rem;
+       margin-bottom: 0;
+   }
+
+   hr.half {
+       width: 50%;
+   }
+
+   hr {
+       margin-top: 5rem;
+       margin-bottom: 5.2rem;
+       border-width: 0;
+       border-top: 1px solid #E1E1E1;
+       border-top: 1px solid rgba(0, 0, 0, 0.1);
+   }
+
+   hr {
+       display: block;
+       -webkit-margin-before: 0.5em;
+       -webkit-margin-after: 0.5em;
+       -webkit-margin-start: auto;
+       -webkit-margin-end: auto;
+       border-style: inset;
+       border-width: 1px;
+   }
+
+
+
+   </style>
+   <div class="page-section">
+   <div class="table-wrapper">
+   <div class="table-scrollable">
+   <table
+   class="table--responsive gf-legend legend"><tbody><tr><td
+   class="colored-cell bootcamp">&nbsp;</td><td>Bootcamp</td><td
+   class="colored-cell cardio">&nbsp;</td><td>Cardio</td><td
+   class="colored-cell cycling">&nbsp;</td><td>Cycling</td></tr><tr
+   class="spacer"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="colored-cell dance">&nbsp;</td><td>Dance</td><td
+   class="colored-cell mind-body">&nbsp;</td><td>Mind &amp; Body</td><td
+   class="colored-cell outdoor">&nbsp;</td><td>Outdoor</td></tr><tr
+   class="spacer"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="colored-cell strength">&nbsp;</td><td>Strength</td><td
+   class="colored-cell swim-instruction">&nbsp;</td><td>Swim Instruction</td></tr></tbody></table></div></div></div><hr
+   class="half no-print"><div
+   class="controls controls--bottom no-print">
+   <a
+   href="https://rsconnect.recsports.ufl.edu" class="button button--default" target="_blank"><i
+   class="fa fa-check-square-o"></i>&nbsp;&nbsp;Register for Classes</a>
+   <a
+   href="#" class="button button--default print" onclick="printThis()"><i
+   class="fa fa-print"></i>&nbsp;&nbsp;Print</a></div></div></div></div></div><div
+   class="row"><div
+   class="page-section min-bottom"><div
+   class="container"><h2 class="section-title">Adjusted Schedule</h2>
+   <p class="centered">There are currently no adjustments to the Group Fitness Schedule.</p></div></div>
+   <div class="page-section">
+   <div class="container"><h2 class="section-title">Standard Schedule</h2>
+   <div class="table-wrapper">
+   <div class="table-scrollable">
+   <table class="table--block table--banded table--responsive gf-schedule"><tbody>
+   <tr
+   class="facility"><td
+   colspan="9"><h4>Bootcamp</h4></td></tr><tr
+   class="head"><td
+   class="gf-time">Time</td><td
+   class="gf-room">Room</td><td
+   class="gf-day">Monday</td><td
+   class="gf-day">Tuesday</td><td
+   class="gf-day">Wednesday</td><td
+   class="gf-day">Thursday</td><td
+   class="gf-day">Friday</td><td
+   class="gf-day">Saturday</td><td
+   class="gf-day">Sunday</td></tr><tr><td
+   class="first">06:00 AM</td><td
+   class="second">Flavet Field</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">6:30 PM</td><td
+   class="second">Flavet Field</td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td
+   class="bootcamp">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Bootcamp
+   <span></span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr
+   class="facility"><td
+   colspan="9"><h4>Aquatics &amp; Campus Pools</h4></td></tr><tr
+   class="head"><td
+   class="gf-time">Time</td><td
+   class="gf-room">Room</td><td
+   class="gf-day">Monday</td><td
+   class="gf-day">Tuesday</td><td
+   class="gf-day">Wednesday</td><td
+   class="gf-day">Thursday</td><td
+   class="gf-day">Friday</td><td
+   class="gf-day">Saturday</td><td
+   class="gf-day">Sunday</td></tr><tr><td
+   class="first">6:00 PM</td><td
+   class="second">Florida Pool</td><td>&nbsp;</td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Coached Swim (45)
+   <span>Olivia T. *(FR)</span>
+   </a></td><td>&nbsp;</td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Coached Swim (45)
+   <span>Olivia T. *(FR)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+
+   <tr
+   class="facility"><td
+   colspan="9"><h4>Student Recreation &amp; Fitness Center</h4></td></tr><tr
+   class="head"><td
+   class="gf-time">Time</td><td
+   class="gf-room">Room</td><td
+   class="gf-day">Monday</td><td
+   class="gf-day">Tuesday</td><td
+   class="gf-day">Wednesday</td><td
+   class="gf-day">Thursday</td><td
+   class="gf-day">Friday</td><td
+   class="gf-day">Saturday</td><td
+   class="gf-day">Sunday</td></tr><tr><td
+   class="first">06:15 AM</td><td
+   class="second">SR 2</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body (45)
+   <span>Matthew</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body (45)
+   <span>Mina *(ESP &amp; FAR)</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body (45)
+   <span>Jenny *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">06:15 AM</td><td
+   class="second">SR 1</td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Lindsey J.</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Mariale *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">08:00 AM</td><td
+   class="second">SR 2</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Liora *(FR)</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Jenny *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Rachel C.</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">10:00 AM</td><td
+   class="second">SR 1</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Daniela M.</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Rotation</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">10:15 AM</td><td
+   class="second">SR 2</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Alivia</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   iBurn
+   <span>Courtney S.</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Mina *(ESP &amp; FAR)</span>
+   </a></td></tr><tr><td
+   class="first">10:15 AM</td><td
+   class="second">SR 3</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Rachel C.</span>
+   </a></td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Liora *(FR)</span>
+   </a></td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Liora *(FR)</span>
+   </a></td><td>&nbsp;</td></tr><tr><td
+   class="first">11:45 AM</td><td
+   class="second">SR 3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   iBurn
+   <span>Amber</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Michelle</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">12:00 PM</td><td
+   class="second">SR 1</td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Leah</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Leah</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Daniela M.</span>
+   </a></td><td>&nbsp;</td></tr><tr><td
+   class="first">1:00 PM</td><td
+   class="second">SR 2</td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Core (30)
+   <span>Lindsey J.</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Core (30)
+   <span>Amber</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">4:00 PM</td><td
+   class="second">SR 1</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Kira</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Karah</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">4:30 PM</td><td
+   class="second">SR 2</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Interval Training
+   <span>Olivia T. *(FR)</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Ashleigh</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">5:00 PM</td><td
+   class="second">SR 3</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Michelle</span>
+   </a></td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Margaret Ann</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Ashleigh</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Vanessa *(FIL)</span>
+   </a></td></tr><tr><td
+   class="first">5:45 PM</td><td
+   class="second">SR 2</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Tai Chi
+   <span>Franco</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">6:00 PM</td><td
+   class="second">SR 1</td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle
+   <span>Karah</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle
+   <span>Rotation</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">6:30 PM</td><td
+   class="second">SR Lobby</td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Stadium Conditioning
+   <span>Margaret Ann &amp; Mina</span>
+   </a></td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Stadium Conditioning
+   <span>Margaret Ann &amp; Matthew</span>
+   </a></td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Stadium Conditioning
+   <span>Emma &amp; Rachel C.</span>
+   </a></td><td
+   class="outdoor">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Stadium Conditioning
+   <span>Margaret Ann &amp; Rachel C.</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">6:30 PM</td><td
+   class="second">SR 3</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba® Step
+   <span>Bryan *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba® Step
+   <span>Bryan *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">7:00 PM</td><td
+   class="second">SR 2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Interval Training
+   <span>Eric *(RUS)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">7:15 PM</td><td
+   class="second">SR 4</td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   iBurn
+   <span>Courtney S.</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Mina *(ESP &amp; FAR)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">7:45 PM</td><td
+   class="second">SR 3</td><td>&nbsp;</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Vanessa *(FIL)</span>
+   </a></td><td>&nbsp;</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Olivia T. *(FR)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">8:15 PM</td><td
+   class="second">SR 1</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Mariale *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Sam M.</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">9:30 PM</td><td
+   class="second">SR 3</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Kimmy (FR)*</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga (75)
+   <span>Abby G.</span>
+   </a></td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Kimmy (FR)*</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga (75)
+   <span>Sammie *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+   <tr
+   class="facility"><td
+   colspan="9"><h4>Southwest Recreation Center</h4></td></tr><tr
+   class="head"><td
+   class="gf-time">Time</td><td
+   class="gf-room">Room</td><td
+   class="gf-day">Monday</td><td
+   class="gf-day">Tuesday</td><td
+   class="gf-day">Wednesday</td><td
+   class="gf-day">Thursday</td><td
+   class="gf-day">Friday</td><td
+   class="gf-day">Saturday</td><td
+   class="gf-day">Sunday</td></tr><tr><td
+   class="first">06:15 AM</td><td
+   class="second">SW 1</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Kira</span>
+   </a></td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Interval Training (45)
+   <span>Eric *(RUS)</span>
+   </a></td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Kira</span>
+   </a></td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Interval Training (45)
+   <span>Mina *(ESP &amp; FAR)</span>
+   </a></td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Emma</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">08:15 AM</td><td
+   class="second">SW 1</td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Mariale *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Mariale *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">10:15 AM</td><td
+   class="second">SW 3</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Aishwarya</span>
+   </a></td></tr><tr><td
+   class="first">11:00 AM</td><td
+   class="second">SW 1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Mina *(ESP &amp; FAR)</span>
+   </a></td><td>&nbsp;</td></tr><tr><td
+   class="first">12:00 PM</td><td
+   class="second">SW 1</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Amita</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Amita</span>
+   </a></td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Amita</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">12:00 PM</td><td
+   class="second">SW Upstairs Cardio</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Gator Theory
+   <span>Alivia</span>
+   </a></td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Gator Theory
+   <span>Matthew</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">3:45 PM</td><td
+   class="second">Harn</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga @ Harn Museum
+   <span>Tori</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga @ Harn Museum
+   <span>Tori</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">4:00 PM</td><td
+   class="second">SW 1</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba®
+   <span>Francesca</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Interval Training
+   <span>Eric *(RUS)</span>
+   </a></td></tr><tr><td
+   class="first">4:00 PM</td><td
+   class="second">SW 3</td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Kickboxing
+   <span>Melissa *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Hip Hop Fitness
+   <span>Olivia T. *(FR)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">5:15 PM</td><td
+   class="second">SW 1</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   iBurn
+   <span>Melissa *(ESP)</span>
+   </a></td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Alivia</span>
+   </a></td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Mariale *(ESP)</span>
+   </a></td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   iBurn
+   <span>Rory</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="cycling">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Cycle (45)
+   <span>Sam M.</span>
+   </a></td></tr><tr><td
+   class="first">5:30 PM</td><td
+   class="second">SW 3</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Yogalates
+   <span>Tori</span>
+   </a></td><td
+   class="cardio">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Kickboxing
+   <span>Ashleigh</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Vinyasa Yoga
+   <span>Michelle</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">6:45 PM</td><td
+   class="second">SW 1</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Rotation</span>
+   </a></td><td>&nbsp;</td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Courtney S.</span>
+   </a></td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Daniela M.</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">7:00 PM</td><td
+   class="second">SW 3</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Abby G.</span>
+   </a></td><td
+   class="strength">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Total Body
+   <span>Jenny *(ESP)</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Morgan</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td
+   class="first">8:15 PM</td><td
+   class="second">SW 3</td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba®
+   <span>Natalie Acevedo *(ESP)</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Carrie *(ESP)</span>
+   </a></td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Aishwarya</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Power Yoga
+   <span>Sammie *(ESP)</span>
+   </a></td></tr><tr><td
+   class="first">9:30 PM</td><td
+   class="second">SW 3</td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Recovery Yoga (75)
+   <span>Morgan</span>
+   </a></td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba®
+   <span>Francesca</span>
+   </a></td><td
+   class="mind-body">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Recovery Yoga (75)
+   <span>Gabriella *(ITA, POR, ESP)</span>
+   </a></td><td
+   class="dance">
+   <a
+   href="https://rsconnect.recsports.ufl.edu/Program/GetProducts?productTypeCV=00000000-0000-0000-0000-000000003502&classification=000000" target="_blank">
+   Zumba®
+   <span>Natalie Acevedo *(ESP)</span>
+   </a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+   </div>
+   </div>
+   </div>
+   </div>
+
+
+
               </div>
     </div>
     </div>
 
-  
+
   <hr>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.11.3.min.js"></script>

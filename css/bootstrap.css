@@ -502,15 +502,9 @@ color:#cc0000;
 
 
 .page-section {
-	  background: linear-gradient(90deg,rgba(204,0,0,0.8),rgba(0,0,0,0.8));
-    border-width: 0px 0;
-    margin-top: -200px;
-    margin-bottom: 5rem;
-    padding: 10rem 0;
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 90% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 90% 100%, 0% 100%);
-    overflow: visible;
-    z-index: 0;
+
+    padding: 4rem 0;
+    box-sizing: border-box;
     position: relative;
 }
 
