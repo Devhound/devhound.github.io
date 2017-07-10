@@ -2271,8 +2271,6 @@ pre code {
   }
 }
 .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -5736,6 +5734,7 @@ a.badge:focus {
 }
 .jumbotron {
   margin-bottom: 30px;
+
   color: #fff;
   background-color: transparent;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5744,9 +5743,22 @@ a.badge:focus {
   height: 100%;
   width: 100%;
   background-size: contain;
-  background: linear-gradient(45deg,rgba(204,0,0,0.8),rgba(0,0,0,0.8)), url('../images/shoelacerunner.jpg');
+  background: linear-gradient(45deg,rgba(204,0,0,0.8),rgba(0,0,0,0.8));
   background-repeat: no-repeat;
   background-position: center !important;
+}
+
+
+@media (max-width: 480px) {
+
+  .jumbotron {
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+  }
+
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
