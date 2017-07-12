@@ -408,8 +408,18 @@ color:#cc0000;
     text-transform: uppercase;
     font-size: 2rem;
     color: #fff;
-    margin-top: 2rem;
-  	margin-bottom: -1rem;
+    margin-top: 1rem;
+  	margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+
+  .section-title-white {
+
+      font-size: 1.4rem;
+
+  }
+
 }
 
 .section-title-white:after {
@@ -5752,8 +5762,8 @@ a.badge:focus {
 @media (max-width: 480px) {
 
   .jumbotron {
-    margin-top: 40px;
-    padding-top: 10px;
+
+    padding-top: 20px;
     padding-bottom: 20px;
 
   }
@@ -5782,8 +5792,8 @@ a.badge:focus {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .container .jumbotron,
   .container-fluid .jumbotron {
