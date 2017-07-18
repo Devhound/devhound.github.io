@@ -225,7 +225,7 @@ NOTE: use percentage font sizes or else old IE chokes
 .fc-state-active,
 .fc-state-disabled {
 	color: #333333;
-	background-color: #fff;
+	background-color: #e6e6e6;
 }
 
 .fc-state-hover {
@@ -387,6 +387,7 @@ hr.fc-divider {
 	border-width: 1px;
 	padding: 0;
 	vertical-align: top;
+	width: 400px
 }
 
 .fc td.fc-today {
@@ -814,7 +815,8 @@ a.fc-more:hover {
 
 .fc-toolbar {
 	text-align: center;
-	margin-bottom: -10px;
+	margin-bottom: 1em;
+	border-bottom: 1px #efefef solid;
 }
 
 .fc-toolbar .fc-left {
@@ -844,7 +846,7 @@ a.fc-more:hover {
 
 .fc-toolbar h2 {
 	margin: 5px 0;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 /* button layering (for border precedence) */

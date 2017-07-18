@@ -10,10 +10,134 @@
 
 /*CUSTOM CSS */
 
+#mainslider .slick-slide {
+
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    
+}
+}
+
+#mainslider .slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1200px)
+{
+#mainslider:hover .slick-prev, #mainslider:hover .slick-next {
+    visibility: visible;
+    opacity: 0.7;
+}
+}
+#mainslider .slick-prev {
+    left: 0;
+}
+
+
+#mainslider .slick-next {
+    right: 0;
+}
+
+#mainslider .slick-prev, #mainslider .slick-next {
+    display: block;
+    visibility: hidden;
+    width: 32px;
+    height: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    box-sizing: content-box;
+    z-index: 2000;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+    top: 50%;
+}
+
+
+#mainslider {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+#mainslider {
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#mainslider .slick-dots {
+    position: absolute;
+    bottom: 45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    color: transparent;
+
+}
 
 
 
+#mainslider .slick-dots li button:before {
+    color: #fff;
+    font-size: 38px;
+    text-shadow: 0 0 1px #333;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
 
+
+
+@media (min-width: 768px)
+{
+#mainslider .slick-dots li button {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 1rem;
+}
+}
+
+#mainslider .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+    margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  .slick-dots {
+    bottom: 16px;
+}
+}
 .featuretext {
 
   font-family: Helvetica;
@@ -377,16 +501,74 @@ color:#cc0000;
 	}
 }
 
+/*CUSTOM CSS */
+
+.section-title-white {
+    text-align: center;
+	font-family: Charter, sans-serif;
+    letter-spacing: 0;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #fff;
+}
+.section-title-white:after {
+    background-color: #cc0000;
+}
+
+.section-title-white:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10%;
+    max-width: 6rem;
+    height: 0.2rem;
+    background-color: #cc0000;
+    margin: 1rem auto 2rem;
+}
+
+#color-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: black;
+   opacity: 0.6;
+}
+
+.body-copy {
+
+	font-family: Charter;
+	font-size: 1rem;
+	line-height: 1.2;
+	text-indent: 30px;
+	margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+	.body-copy {
+	font-size: 24px;
+	}
+}
+
 .section-title-black {
     text-align: center;
-    font-weight: 400;
     font-family: Helvetica, sans-serif;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #000;
-	margin-top: 7rem;
+	margin-top: 5rem;
 	margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .section-title-black {
+    font-size: 1.7rem;
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+
+  }
+
+
 }
 
 .section-title-black:after {
@@ -400,26 +582,51 @@ color:#cc0000;
     margin: 1rem auto 2rem;
 }
 
-.section-title-white {
+
+
+
+
+.column-title-black {
     text-align: center;
-    font-weight: 400;
     font-family: Helvetica, sans-serif;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 2rem;
-    color: #fff;
-    margin-top: 1rem;
-  	margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #000;
+	margin-top: 4.75rem;
+	margin-bottom: 1rem;
 }
 
 @media (max-width: 480px) {
-
-  .section-title-white {
-
-      font-size: 1.4rem;
+  .column-title-black {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+    margin-bottom: .25rem;
 
   }
 
+
+}
+
+.column-title-black:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 10%;
+    max-width: 3rem;
+    height: 0.2rem;
+    background-color: #cc0000;
+    margin: .5rem auto 0;
+}
+
+
+.section-title-white {
+    text-align: center;
+    font-family: Charter, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #fff;
 }
 
 .section-title-white:after {
@@ -434,16 +641,10 @@ color:#cc0000;
 }
 
 .hover-cover {
-	  color: #fff;
-    background-color: #fff;
+	color: #fff;
     position: relative;
     overflow: hidden;
     display: block;
-    max-width: 350px;
-    margin: 0 auto;
-    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 50% 100%, 0% 100%);
-
 }
 
  .cover-image {
@@ -478,9 +679,14 @@ color:#cc0000;
     top: 0px;
     left: 0px;
     padding: 5%;
-    background: linear-gradient(-90deg,rgba(204,0,0,0.7),rgba(0,0,0,0.7));
-    transition: .3s linear;
-    max-width: 350px;
+    background: rgba(0,0,0, 0.5);
+    transition: .3s ease;
+}
+
+
+.cover-wrap:hover {
+  background: transparent;
+
 
 }
 
@@ -6001,7 +6207,8 @@ a.thumbnail.active {
   background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
 }
 .media {
-  margin-top: 15px;
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 .media:first-child {
   margin-top: 0;
@@ -6041,8 +6248,11 @@ a.thumbnail.active {
   vertical-align: bottom;
 }
 .media-heading {
-  margin-top: 0;
-  margin-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #000;
+    text-decoration: underline;
+    transition: .3s linear;
 }
 .media-list {
   padding-left: 0;
