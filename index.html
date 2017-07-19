@@ -129,7 +129,7 @@
         <li class="pmd-ripple-effect"><a href="#">Membership</a></li>
         <li class="pmd-ripple-effect"><a href="#">Hours</a></li>
         <li class="pmd-ripple-effect"><a href="#">Contact</a></li>
-        <li class=""><a href="#" data-target="#form-dialog" data-toggle="modal" title="Search" class="" data-sidebar="true"><span class="hidden-lg">Search</span><span><i class="fa fa-search" aria-hidden="true" style="margin-left:2px;"></i></span></a></li>
+        <li class=""><a href="http://google.ttu.edu/search" title="Search" class=""><span class="hidden-lg">Search</span><span><i class="fa fa-search" aria-hidden="true" style="margin-left:2px;"></i></span></a></li>
 
       </ul>
         </nav>
@@ -139,34 +139,7 @@
   </div>
   <!-- /.container-fluid -->
 
-  <div tabindex="-1" class="modal fade" id="form-dialog" style="display: none;" aria-hidden="true">
-  	<div class="modal-dialog">
-  		<div class="modal-content">
-
-  			<div class="modal-body">
-  				<form action="http://google.ttu.edu/search" method="GET" class="form-horizontal">
-
-  					<div class="form-group pmd-textfield pmd-textfield-floating-label">
-  						<label for="q">Search Texas Tech University</label>
-  						<input type="text" class="mat-input form-control search-text" name ="q" id="q" onfocus="this.value=''" >
-              <input name="site" type="hidden" value="Campus">
-              <input name="client" type="hidden" value="texas_tech">
-              <input name="output" type="hidden" value="xml_no_dtd">
-              <input name="proxystylesheet" type="hidden" value="texas_tech">
-
-
-
-
-
-  			</div>
-  			<div class="pmd-modal-action">
-            <input action="submit" name="submit" alt="search" type="image" src="images/search-button.gif">
-            </form>
-        </div>
-  		</div>
-  	</div>
-  </div>
-</div>
+  
 
 <div class="container hidden">
   <div class="row">
@@ -327,40 +300,28 @@
           }
 
 
-          .fc-list-table {
-
-            width: 170px !important;
-            margin: 0;
-
-          }
-
           .fc-list-item-time {
 
-            color: #fff;
+            color: #000;
 
           }
 
-          .fc-list-item-title {
 
-            width: 200px !important;
-
-          }
 
           #loading {
-            display: none;
+
             position: absolute;
             top: 10;
             right: 10;
           }
 
           #calendar {
-            max-width: 200px;
+            width: 100%;
+            max-width: 300px;
             height: 500px;
             border: 0px solid #efefef;
-            margin: 0 auto;
-            padding: 3px;
             font-family: "Arial";
-            font-size: 14px;
+
 
             }
 
@@ -376,6 +337,8 @@
 
               }
           </style>
+
+      <div class="overlay"></div>
       <div id="calendar"></div>
 
 
@@ -695,7 +658,7 @@ $(document).ready(function(){
   googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
 
   // US Holidays
-  events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
+  events: 'vo8ivp0fkg13jghu6cu4ph9gp8@group.calendar.google.com',
 
   eventClick: function(event) {
     window.open(event.url, 'gcalevent', 'width=400,height=600');
@@ -709,6 +672,9 @@ $(document).ready(function(){
   });
 
   });</script>
+
+
+
 
 </body>
 </html>

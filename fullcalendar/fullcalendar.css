@@ -225,7 +225,7 @@ NOTE: use percentage font sizes or else old IE chokes
 .fc-state-active,
 .fc-state-disabled {
 	color: #333333;
-	background-color: #e6e6e6;
+	background-color: #fff;
 }
 
 .fc-state-hover {
@@ -387,7 +387,7 @@ hr.fc-divider {
 	border-width: 1px;
 	padding: 0;
 	vertical-align: top;
-	width: 400px
+	
 }
 
 .fc td.fc-today {
