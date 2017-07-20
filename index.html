@@ -41,8 +41,24 @@
 
       <ul class="nav navbar-nav pmd-sidebar-nav">
 
+        <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-dropdown-hover pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">About<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hours</a></li>
+            <li><a href="#">Faculty Staff</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Employment</a></li>
+            <li><a href="#">Outdoor Space Information</a></li>
+            <li><a href="#">West Rec Turf Fields</a></li>
+            <li><a href="#">Parking</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+
+
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-dropdown-hover pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Intramurals<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
+
             <li><a aria-expanded="false" href="#">Sport Registration Dates</a></li>
             <li><a href="#">IM Leagues Registration</a></li>
             <li><a href="#">Free Agent Info</a></li>
@@ -50,7 +66,9 @@
             <li><a href="#">West Rec Turf Field Info</a></li>
             <li><a href="#">Sportsmanship &amp; Ejections</a></li>
             <li><a href="#">F.A.Q's</a></li>
+
           </ul>
+
         </li>
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-dropdown-hover pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Fitness/Wellness<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
@@ -112,23 +130,13 @@
 
         <li class="dropdown pmd-dropdown"><a href="#" class="dropdown-toggle pmd-dropdown-hover pmd-ripple-effect" data-toggle="dropdown" data-sidebar="true" aria-expanded="false">Facilities<span><i class="fa fa-angle-down" aria-hidden="true" style="margin-left:2px;"></i></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Hours</a></li>
-            <li><a href="#">Faculty Staff</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Employment</a></li>
             <li><a href="#">Equipment Issue</a></li>
             <li><a href="#">Lockers &amp; Towels</a></li>
-            <li><a href="#">Outdoor Space Information</a></li>
-            <li><a href="#">West Rec Turf Fields</a></li>
-            <li><a href="#">Parking</a></li>
-            <li><a href="#">Policies</a></li>
-            <li><a href="#">Contact Us</a></li>
+            
+
           </ul>
         </li>
 
-        <li class="pmd-ripple-effect"><a href="#">Membership</a></li>
-        <li class="pmd-ripple-effect"><a href="#">Hours</a></li>
-        <li class="pmd-ripple-effect"><a href="#">Contact</a></li>
         <li class=""><a href="http://google.ttu.edu/search" title="Search" class=""><span class="hidden-lg">Search</span><span><i class="fa fa-search" aria-hidden="true" style="margin-left:2px;"></i></span></a></li>
 
       </ul>
@@ -673,7 +681,15 @@ $(document).ready(function(){
 
   });</script>
 
-
+  <script>
+  $(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+  </script>
 
 
 </body>
