@@ -53,6 +53,7 @@
 	border: none;
 	outline: none;
 	background: transparent;
+  z-index: 2000;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -90,7 +91,7 @@
 
 .slick-prev
 {
-	left: 25px;
+	left: 15px;
 }
 @media (max-width: 767px) {
 	.slick-prev
@@ -114,7 +115,7 @@
 
 .slick-next
 {
-    right: 25px;
+    right: 15px;
 }
 @media (max-width: 767px) {
 	.slick-next
