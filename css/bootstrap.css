@@ -328,6 +328,7 @@ pre, blockquote, form, dl, figure, table, p, ul, ol, form {
     list-style: none;
     text-align: center;
     color: transparent;
+    margin-bottom: 0px !important;
 
 }
 
