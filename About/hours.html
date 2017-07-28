@@ -356,35 +356,51 @@ $(document).ready(function(){
 		$('.pmd-dropdown-hover').dropdownHover().dropdown();
 	});
 </script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-      $('#calendar').fullCalendar({
-  header: {
-          left: '',
-          center: 'prev,next,listDay,listWeek',
-          right: ''
-        },
-        views: {
-          listDay: { buttonText: 'Today' },
-          listWeek: { buttonText: 'Week' }
-        },
-        defaultView: 'listWeek',
-  			navLinks: true, // can click day/week names to navigate views
-  			editable: true,
-        height: 425,
-        googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
-        // US Holidays
-        events: 'a8n57484qtiggrf5p9tr2rnveg@group.calendar.google.com',
-        eventClick: function(event) {
-          window.open(event.url, 'gcalevent', 'width=400,height=600');
-          return false;
-        },
-        loading: function(bool) {
-          $('#loading').toggle(bool);
-        }
-      });
-    });
-</script>
+<script>
+
+$(document).ready(function(){
+
+$("#calendar").fullCalendar({
+
+
+
+
+header: {
+  left: '',
+  center: 'title',
+  right: 'prev,next'
+},
+
+
+views: {
+  listDay: { buttonText: 'Today' },
+  listWeek: { buttonText: 'Week' }
+},
+
+defaultView: 'listWeek',
+navLinks: true, // can click day/week names to navigate views
+editable: true,
+
+height: 1000,
+width: 170,
+
+googleCalendarApiKey: 'AIzaSyAJ8F-W3G8QdVUijSeBiSNTai9bKDEcSKc',
+
+// US Holidays
+events: 'vo8ivp0fkg13jghu6cu4ph9gp8@group.calendar.google.com',
+
+eventClick: function(event) {
+  window.open(event.url, 'gcalevent', 'width=400,height=600');
+  return false;
+},
+
+loading: function(bool) {
+  $('#loading').toggle(bool);
+}
+
+});
+
+});</script>
 <script type="text/javascript">
 $(document).ready(function(){
   $('#show-sidebar').click(function(e) {
